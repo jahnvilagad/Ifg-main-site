@@ -8,6 +8,11 @@
   src: url("../fonts/WalterTurncoat-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "SairaSemiCondensed-Medium";
+  src: url("../fonts/SairaSemiCondensed-Medium.ttf") format("truetype");
+}
+
 .page-loading {
   position: fixed;
   top: 0;
@@ -1417,8 +1422,151 @@ ul.navbar-nav li::after,
   width: 52%;
 }
 
+.history .content-left {
+  text-align: left;
+}
+
+.history #conference-timeline .conference-center-line {
+  background: unset;
+  border: 1px dashed rgba(184, 184, 184, 1);
+}
+
+.timeline-article .meta-date {
+  background-color: #48AED9 !important;
+  height: 43px;
+  width: 3px;
+  border-radius: unset;
+  margin-left: -2px;
+}
+
+.journey-time {
+  position: absolute;
+  bottom: 7rem;
+  left: 1.5rem;
+  color: rgba(72, 174, 217, 1);
+  font-size: 3.5rem;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  font-weight: 700;
+  font-family: "SairaSemiCondensed-Medium", sans-serif;
+}
+.dropdown-mega .bi-arrow-down {
+  position: absolute;
+  top: 15px;
+  right: -2px;
+}
+
+.become-partner-bg {
+  background-color: rgba(72, 174, 217, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 7px 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.togetherall{
+  background: rgba(0, 198, 189, 1);
+  position: absolute;
+  bottom: -38px;
+  left: 0;
+  padding: 7px 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.student-handbook{
+  background: rgba(254, 192, 84, 1);
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  padding: 7px 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.menu-border::after {
+  content: '';
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  background-color: rgba(193, 200, 208, 1);
+  height: 100%;
+  width: 1px;
+}
+
+.become-partner-img {
+  border: 2px solid rgba(211, 216, 220, 1);
+}
+
+.dropdown-logo-icon{
+  position: relative;
+}
+
+.dropdown-logo-icon::after{
+  content: '';
+  background-image: url(../img/feature/logo-icon-menu.png);
+  background-position: 100% center;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 324px;
+  height: 329px;
+  z-index: -1;
+}
+
+.about-menu .dropdown-logo-icon::after {
+  width: 213px;
+  height: 214px;
+}
+
+@media (max-width:1279px) {
+	.menu-border::after{
+		content: unset;
+		background-color:unset;
+		position: unset;
+	}
+  .dropdown-logo-icon::after{
+    content: unset;
+    position: unset;
+    background-image: unset;
+  }
+}
+ 
+
+@media (min-width:1025px) {
+  .navbar-expand-lg .dropdown-mega.about-menu>.dropdown-menu {
+      width: 52%;
+      left: 44rem;
+  }
+}
 
 @media (max-width:1024px) {
+  .journey-time {
+    bottom: 8.5rem;
+  }
+
+  .bg-team-yellow,
+  .bg-team-green,
+  .bg-team-orange,
+  .bg-team-blue {
+    text-align: center;
+  }
+
+  .career-opportuniti {
+    top: 5%;
+    left: 53%;
+    width: 85%;
+  }
+
+  .career-opportuniti h2 {
+    font-size: 18px;
+  }
+
+  .career-opportuniti p {
+    font-size: 14px;
+  }
 
   .pathway-green-bg::after,
   .pathway-blue-bg::after,
@@ -1434,9 +1582,29 @@ ul.navbar-nav li::after,
   .student-name span {
     margin-left: 111px;
   }
+
+  .team-arrow {
+    right: 7rem;
+  }
 }
 
 @media (max-width:991px) {
+  .journey-time {
+    bottom: 9rem;
+    left: 3rem;
+  }
+
+  .team-arrow {
+    right: 3rem;
+  }
+
+  .career-opportuniti {
+    position: unset;
+    transform: unset;
+    width: auto;
+    padding: 2rem;
+  }
+
   .column-4 ul {
     columns: 3;
   }
@@ -1457,9 +1625,26 @@ ul.navbar-nav li::after,
   .breadcrumb-course .breadcrumb {
     justify-content: center;
   }
+
+  .timeline-article .meta-date {
+    margin-left: 30px;
+  }
+
+  .timeline-article {
+    margin: 0;
+  }
 }
 
 @media (max-width:767px) {
+
+  .journey-time {
+    bottom: 14.5rem;
+  }
+
+  .timeline-article .meta-date {
+    margin-left: 30px;
+  }
+
   .how-to-apply::after {
     display: none;
   }
