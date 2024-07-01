@@ -1246,7 +1246,7 @@ ul.navbar-nav li::after,
   border-radius: 50px;
 }
 
-.selection-student .residence-provider {
+.residence-provider {
   border: 1px solid rgba(72, 174, 217, 1);
   background: rgba(72, 174, 217, 0.13);
   border-radius: 50px;
@@ -1289,6 +1289,11 @@ ul.navbar-nav li::after,
 .dotted-border-bg {
   background: rgba(217, 234, 255, 0.38);
   border: 2px dashed rgba(202, 224, 233, 1);
+}
+
+.dashed-border-bg-blue {
+  background: #D9EAFF61;
+  border: 2px dashed #CAE0E9;
 }
 
 
@@ -1449,6 +1454,7 @@ ul.navbar-nav li::after,
   font-weight: 700;
   font-family: "SairaSemiCondensed-Medium", sans-serif;
 }
+
 .dropdown-mega .bi-arrow-down {
   position: absolute;
   top: 15px;
@@ -1465,7 +1471,7 @@ ul.navbar-nav li::after,
   width: 100%;
 }
 
-.togetherall{
+.togetherall {
   background: rgba(0, 198, 189, 1);
   position: absolute;
   bottom: -38px;
@@ -1475,7 +1481,7 @@ ul.navbar-nav li::after,
   width: 100%;
 }
 
-.student-handbook{
+.student-handbook {
   background: rgba(254, 192, 84, 1);
   position: absolute;
   bottom: -34px;
@@ -1499,11 +1505,11 @@ ul.navbar-nav li::after,
   border: 2px solid rgba(211, 216, 220, 1);
 }
 
-.dropdown-logo-icon{
+.dropdown-logo-icon {
   position: relative;
 }
 
-.dropdown-logo-icon::after{
+.dropdown-logo-icon::after {
   content: '';
   background-image: url(../img/feature/logo-icon-menu.png);
   background-position: 100% center;
@@ -1521,24 +1527,66 @@ ul.navbar-nav li::after,
   height: 214px;
 }
 
+.csr-ifg-logo {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.csr-ifg-logo img {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accreditation-border {
+  border: 2px solid #C6DEE8EB;
+  box-shadow: 4px 4px 30px 0px #00000012;
+  border-radius: 40px 0 40px 0;
+}
+
+.become-a-agent {
+  position: absolute;
+  left: 8rem;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: -1;
+}
+
+@media (max-width:1366px) {
+  .career-opportuniti {
+    top: 50%;
+    left: 2rem;
+    width: 85%;
+    transform: translateY(-50%);
+  }
+}
+
 @media (max-width:1279px) {
-	.menu-border::after{
-		content: unset;
-		background-color:unset;
-		position: unset;
-	}
-  .dropdown-logo-icon::after{
+  .menu-border::after {
+    content: unset;
+    background-color: unset;
+    position: unset;
+  }
+
+  .dropdown-logo-icon::after {
     content: unset;
     position: unset;
     background-image: unset;
   }
 }
- 
+
 
 @media (min-width:1025px) {
   .navbar-expand-lg .dropdown-mega.about-menu>.dropdown-menu {
-      width: 52%;
-      left: 44rem;
+    width: 52%;
+    left: 44rem;
   }
 }
 
@@ -1589,6 +1637,23 @@ ul.navbar-nav li::after,
 }
 
 @media (max-width:991px) {
+  .partner-benefit ul li {
+    font-size: 16px;
+  }
+
+  .latest-news .border-bottom {
+    border-bottom: unset !important;
+  }
+
+  .csr-ifg-logo {
+    width: 178px;
+    height: 178px;
+  }
+
+  .csr-ifg-logo img {
+    width: 86%;
+  }
+
   .journey-time {
     bottom: 9rem;
     left: 3rem;
@@ -1636,6 +1701,18 @@ ul.navbar-nav li::after,
 }
 
 @media (max-width:767px) {
+  .partner-benefit ul {
+    columns: 1;
+  }
+
+  .csr-ifg-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .csr-ifg-logo img {
+    width: 76%;
+  }
 
   .journey-time {
     bottom: 14.5rem;
