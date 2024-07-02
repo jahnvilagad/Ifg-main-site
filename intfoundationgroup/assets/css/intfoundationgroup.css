@@ -10634,7 +10634,7 @@ progress {
 	margin-bottom: .375rem;
 	font-size: 0.875rem;
 	font-weight: 500;
-	color: #4a4b65
+	color: #000;
 }
 
 .col-form-label {
@@ -10679,7 +10679,7 @@ progress {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border-radius: 6px;
+	border-radius: 0px;
 	box-shadow: 0 0 0 0 transparent;
 	transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out
 }
@@ -23895,9 +23895,9 @@ div.code-toolbar>.toolbar>.toolbar-item>button:hover {
 	padding-left: 1rem
 }
 
-.form-label {
+/* .form-label {
 	padding-left: 1.125rem
-}
+} */
 
 .form-label-lg {
 	padding-left: 1.25rem
