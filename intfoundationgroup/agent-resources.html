@@ -456,7 +456,8 @@
                     degree level study in the UK and Australia.</p>
 
                 <div class="">
-                    <a href="#" class="btn btn-secondary">Become an Agent</a>
+                    <a href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#become-an-agent">Become an Agent</a>
                     <a href="#" class="btn btn-outline-primary">Agent Portal</a>
                 </div>
             </div>
@@ -739,7 +740,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 border-start">
+                <div class="col-md-6 col-lg-4 border-start">
                     <div class="d-flex align-items-center mb-3">
                         <h4 class="mb-0 text-secondary fs-5">Available Courses</h4> <i
                             class="bi bi-arrow-right ms-2 text-dark"></i>
@@ -826,6 +827,104 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="become-an-agent" tabindex="-1" role="dialog" aria-modal="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content dropdown-logo-icon zindex-1">
+                <div class="modal-header">
+                    <h4 class="modal-title">Agent Registration</h4>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Agent Name</label>
+                                    <input class="form-control" type="text" id="normal-input"
+                                        placeholder="Enter agent name">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Type</label>
+                                    <select class="form-select" id="validationCustom03" required="">
+                                        <option value="">Select Type</option>
+                                        <option value="">Type</option>
+                                        <option value="">Type</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Company Name</label>
+                                    <input class="form-control" type="text" id="normal-input"
+                                        placeholder="Enter company name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Comapny Registration</label>
+                                    <input class="form-control" type="text" id="normal-input"
+                                        placeholder="Enter registration number">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Address</label>
+                                    <input class="form-control" type="text" id="normal-input"
+                                        placeholder="Enter Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Your Country</label>
+                                    <select class="form-select" id="validationCustom03" required="">
+                                        <option value="">Select your country</option>
+                                        <option value="">Indian</option>
+                                        <option value="">Indian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Email</label>
+                                    <input class="form-control" type="text" id="normal-input" placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Phone</label>
+                                    <input class="form-control" type="text" id="normal-input"
+                                        placeholder="Enter Phone no">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Countries you are recruiting</label>
+                                    <select class="form-select" id="validationCustom03" required="">
+                                        <option value="">Select country</option>
+                                        <option value="">Indian</option>
+                                        <option value="">Indian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-4">
+                                    <label class="form-label" for="normal-input">Your Message</label>
+                                    <textarea class="form-control" id="textarea-input"
+                                        rows="5">Enter your message here</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to top button-->
     <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>

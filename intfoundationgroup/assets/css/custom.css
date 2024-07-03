@@ -132,7 +132,12 @@ body::-webkit-scrollbar-thumb {
 .social-icon {
   columns: 2;
   list-style: none;
-  width: 35%;
+  width: 62%;
+}
+
+ul.list-type-none li::after{
+  content: unset;
+  border: unset;
 }
 
 .bs-twitter-x,
@@ -449,13 +454,22 @@ body::-webkit-scrollbar-thumb {
 
 /*partners css end*/
 
+.dotted-border-right {
+  position: relative;
+}
 
-/* .dotted-border-right {
+.dotted-border-right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0;
-  height: 75px;
+  height: 100%;
+  border: 1px dashed rgba(233, 236, 241, 1);
   background:
-    repeating-linear-gradient(to bottom, rgba(23, 71, 128, 1) 0 4px, rgba(72, 174, 217, 1) 4px 8px) 80%/2px 100% no-repeat;
-} */
+    linear-gradient(rgba(233, 236, 241, 1) 0 0) padding-box,
+    linear-gradient(to bottom, rgba(23, 71, 128, 1), rgba(72, 174, 217, 1)) border-box;
+}
 
 /* .bg-blue-shape::after {
   content: "";
@@ -767,6 +781,7 @@ body::-webkit-scrollbar-thumb {
   bottom: -28px;
   border: 3px solid #fff;
   line-height: 40px;
+  cursor: pointer;
 }
 
 .teaching-arrrow i {
@@ -1162,6 +1177,10 @@ body::-webkit-scrollbar-thumb {
   bottom: -15px;
 }
 
+.fees.undergraduate-subject .nav-tabs .nav-link.active::after {
+  border-top: unset;
+}
+
 .fees .nav-tabs .nav-link.active,
 .fees .nav-tabs .nav-item.show .nav-link {
   border-color: transparent;
@@ -1255,6 +1274,10 @@ ul.navbar-nav li::after,
 
 .column-4 ul {
   columns: 4;
+}
+
+.column-3 ul {
+  columns: 3;
 }
 
 .students-study-abroad .accordion-button:not(.collapsed)::after {
@@ -1559,6 +1582,190 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
+/*wizard css start*/
+.wizard .nav-tabs {
+  position: relative;
+  margin-bottom: 0;
+  border-bottom-color: transparent;
+}
+
+.wizard>div.wizard-inner {
+  position: relative;
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+.connecting-line {
+  height: 2px;
+  background: #e0e0e0;
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 19px;
+  z-index: 1;
+}
+
+.wizard .nav-tabs>li.active>a,
+.wizard .nav-tabs>li.active>a:hover,
+.wizard .nav-tabs>li.active>a:focus {
+  color: #555555;
+  cursor: default;
+  border: 0;
+  border-bottom-color: transparent;
+}
+
+span.round-tab {
+  width: 40px;
+  height: 40px;
+  line-height: 37px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #0e214b;
+  font-weight: 500;
+  border: 1px solid #ddd;
+}
+
+.wizard li.active span.round-tab {
+  background: rgba(72, 174, 217, 1);
+  color: #fff;
+  border-color: rgba(72, 174, 217, 1);
+}
+
+.wizard li.active span.round-tab:after {
+  content: '';
+  position: absolute;
+  right: -3rem;
+  top: 18px;
+  background-color: rgba(72, 174, 217, 1);
+  height: 3px;
+  width: 100%;
+}
+
+.wizard li.active span.round-tab i {
+  color: #5bc0de;
+}
+
+.wizard .nav-tabs>li.active>a i {
+  color: rgba(72, 174, 217, 1);
+}
+
+.wizard .nav-tabs>li {
+  width: 12%;
+}
+
+.wizard li:after {
+  content: " ";
+  position: absolute;
+  left: 46%;
+  opacity: 0;
+  margin: 0 auto;
+  bottom: 0px;
+  border: 5px solid transparent;
+  border-bottom-color: red;
+  transition: 0.1s ease-in-out;
+}
+
+
+
+.wizard .nav-tabs>li a {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto;
+  border-radius: 100%;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+}
+
+.wizard .nav-tabs>li a i {
+  position: absolute;
+  top: -15px;
+  font-style: normal;
+  font-weight: 400;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+}
+
+.wizard .nav-tabs>li a:hover {
+  background: transparent;
+}
+
+/*wizard css end*/
+
+.contact-border::after {
+  content: '';
+  position: absolute;
+  right: 3rem;
+  top: 0;
+  background-color: rgba(193, 200, 208, 1);
+  height: 100%;
+  width: 1px;
+}
+
+.teaching-centre-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
+
+.undergraduate-subjects-content {
+  position: absolute;
+  bottom: 7px;
+  left: 12px;
+}
+
+.university-offer table tr td {
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+}
+
+.student-support-border::before {
+  content: '';
+  position: absolute;
+  left: 3rem;
+  top: 11rem;
+  height: 1px;
+  width: 58%;
+  background-color: rgba(193, 200, 208, 1);
+}
+
+.dropdown-mega .dropdown-menu::before {
+  content: '';
+  background: -webkit-linear-gradient(left, rgba(72, 174, 217, 1) 50%, rgba(23, 71, 128, 1) 50%);
+  height: 6px;
+  position: absolute;
+  bottom: 0 !important;
+  left: 0;
+  width: 100%;
+  top: auto;
+}
+
+.back-page-arrow {
+  border: 2px solid rgba(152, 152, 152, 1);
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(233, 236, 241, 1);
+  line-height: 42px;
+}
+.back-page-arrow i {
+  font-size: 1.5rem;
+}
+
 @media (max-width:1366px) {
   .career-opportuniti {
     top: 50%;
@@ -1580,12 +1787,18 @@ ul.navbar-nav li::after,
     position: unset;
     background-image: unset;
   }
+
+  .dropdown-mega .dropdown-menu::before {
+    background: unset;
+    content: unset;
+    position: unset;
+  }
 }
 
 
 @media (min-width:1025px) {
   .navbar-expand-lg .dropdown-mega.about-menu>.dropdown-menu {
-    width: 52%;
+    width: 39%;
     left: 44rem;
   }
 }
@@ -1637,6 +1850,10 @@ ul.navbar-nav li::after,
 }
 
 @media (max-width:991px) {
+  .social-icon {
+    width: 34%;
+  }
+
   .partner-benefit ul li {
     font-size: 16px;
   }
@@ -1701,6 +1918,21 @@ ul.navbar-nav li::after,
 }
 
 @media (max-width:767px) {
+  .social-icon {
+    width: 20%;
+    padding: 0;
+  }
+
+  .contact-border::after {
+    content: '';
+    position: unset;
+    background-color: unset;
+  }
+
+  .wizard>div.wizard-inner {
+    margin-bottom: 4rem;
+  }
+
   .partner-benefit ul {
     columns: 1;
   }

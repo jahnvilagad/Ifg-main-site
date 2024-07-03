@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/intfoundationgroup.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/slick-min.css">
 </head>
 
 <body>
@@ -172,7 +173,8 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a class="dropdown-item mb-3 d-block d-xl-none" href="becone-a-partner-centre.html">Become a Partner Teaching Centre</a>
+                                        <a class="dropdown-item mb-3 d-block d-xl-none"
+                                            href="becone-a-partner-centre.html">Become a Partner Teaching Centre</a>
                                     </div>
                                 </div>
                             </li>
@@ -195,10 +197,30 @@
                                     <div class="col-md-4 mb-2 mb-lg-0 position-relative menu-border">
                                         <a class="dropdown-item mb-4 text-secondary fw-bold" href="#">Where do you want
                                             to study? <i class="bi bi-arrow-right"></i></a>
-
-                                        <a class="dropdown-item mb-3" href="#">London</a>
-                                        <a class="dropdown-item mb-3" href="#">UAE</a>
-
+                                        <div class="dropend d-table">
+                                            <a class="dropdown-item mb-3 dropdown-toggle" href="#"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">London</a>
+                                            <div class="dropdown-menu mx-1">
+                                                <a class="dropdown-item" href="#">Visa</a>
+                                                <a class="dropdown-item" href="#">Accommodation</a>
+                                                <a class="dropdown-item" href="#">What to Bring</a>
+                                                <a class="dropdown-item" href="#">Pre-Arrival Documents</a>
+                                                <a class="dropdown-item" href="#">Other Cost</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropend d-table">
+                                            <a class="dropdown-item mb-3 dropdown-toggle" href="#"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">UAE</a>
+                                            <div class="dropdown-menu mx-1">
+                                                <a class="dropdown-item" href="#">Visa</a>
+                                                <a class="dropdown-item" href="#">Accommodation</a>
+                                                <a class="dropdown-item" href="#">What to Bring</a>
+                                                <a class="dropdown-item" href="#">Pre-Arrival Documents</a>
+                                                <a class="dropdown-item" href="#">Other Cost</a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-5 mb-2 mb-lg-0">
                                         <a class="dropdown-item mb-4 text-secondary fw-bold" href="#">Application
@@ -213,69 +235,77 @@
                             </li>
                             <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#"
                                     data-bs-toggle="dropdown">Student Support</a>
-                                <div class="dropdown-menu py-0 py-xl-5 dropdown-logo-icon align-items-center">
+                                <div class="dropdown-menu py-0 py-xl-5 dropdown-logo-icon align-items-center student-support-border">
                                     <div class="col-md-3 mb-2 mb-lg-0 position-relative menu-border py-2 py-xl-4">
-                                        <a class="dropdown-item mb-2 mb-xl-4 border-bottom" href="#">Life in the UK <i class="bi bi-arrow-right"></i></a>
-                                        <a class="dropdown-item mb-2 mb-xl-4" href="#">Life in the UAE <i class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="#">Life in the UK <i
+                                                class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="#">Life in the UAE <i
+                                                class="bi bi-arrow-right"></i></a>
                                     </div>
                                     <div class="col-md-3 mb-2 mb-lg-0 position-relative menu-border py-2 py-xl-4">
-                                        <a class="dropdown-item mb-2 mb-xl-4 border-bottom" href="#">University Application &
-                                            Progression Support<i class="bi bi-arrow-right"></i></a>
-                                            <a class="dropdown-item mb-2 mb-xl-4" href="#">What our students say<i class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-3 text-wrap" href="#">University
+                                            Application &
+                                            Progression Support <i class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="#">What our students say <i
+                                                class="bi bi-arrow-right"></i></a>
 
                                     </div>
                                     <div class="col-md-2 mb-2 mb-lg-0 py-2 py-xl-4">
-                                        <a class="dropdown-item mb-2 mb-xl-4 border-bottom" href="#">Pharos<i class="bi bi-arrow-right"></i></a>
-                                        <a class="dropdown-item mb-2 mb-xl-4" href="faqs.html">FAQs<i class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="#">Pharos <i
+                                                class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="faqs.html">FAQs <i
+                                                class="bi bi-arrow-right"></i></a>
                                     </div>
                                     <div class="col-md-2 mb-2 mb-lg-0">
                                         <a href="#" class="d-none d-xl-block">
                                             <div class="position-relative">
                                                 <img src="assets/img/feature/student-support.png" class="img-fluid"
-                                                    alt="Student Support" title="Student Support" width="191" height="271"
-                                                    loading="lazy">
-                                                    <div class="student-handbook">
-                                                        <p class="text-white mb-0">Student Handbook<i
-                                                                class="bi bi-arrow-up-right-circle ms-2"></i></p>
-                                                    </div>
+                                                    alt="Student Support" title="Student Support" width="191"
+                                                    height="271" loading="lazy">
+                                                <div class="student-handbook">
+                                                    <p class="text-white mb-0">Student Handbook<i
+                                                            class="bi bi-arrow-up-right-circle ms-2"></i></p>
+                                                </div>
                                             </div>
                                         </a>
                                         <a class="dropdown-item mb-3 d-block d-xl-none" href="#">Student Handbook</a>
                                     </div>
-                                    <div class="col-md-2 mb-2 mb-lg-0">
+                                    <div class="col-md-2 mb-2 mb-lg-0 ms-3">
                                         <a href="togetherall.html" class="d-none d-xl-block">
                                             <div class="bg-grey p-3 position-relative">
                                                 <img src="assets/img/banner/breadcrumb-bg-togetherall.png"
                                                     class="img-fluid" alt="Togetherall" title="Togetherall" width="373"
                                                     height="144" loading="lazy">
-                                                    <div class="togetherall">
-                                                        <p class="text-white mb-0">Togetherall<i
-                                                                class="bi bi-arrow-up-right-circle ms-2"></i></p>
-                                                    </div>
+                                                <div class="togetherall">
+                                                    <p class="text-white mb-0">Togetherall<i
+                                                            class="bi bi-arrow-up-right-circle ms-2"></i></p>
+                                                </div>
                                             </div>
                                         </a>
-                                        <a class="dropdown-item mb-3 d-block d-xl-none" href="togetherall.html">Togetherall</a>
+                                        <a class="dropdown-item mb-3 d-block d-xl-none"
+                                            href="togetherall.html">Togetherall</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="nav-item dropdown dropdown-mega about-menu">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
-                                    <div class="dropdown-menu py-4 dropdown-logo-icon">
-                                        <div class="col-md-6 mb-2 mb-lg-0 position-relative menu-border">
-                                            <a class="dropdown-item mb-3" href="about-us.html">About IFG</a>
-                                            <a class="dropdown-item mb-3" href="ifg-team.html">IFG Team</a>
-                                            <a class="dropdown-item mb-3" href="ifg-history.html">IFG History</a>
-                                            <a class="dropdown-item mb-3" href="#">CSR</a>
-                                        </div>
-                                        <div class="col-md-6 mb-2 mb-lg-0">
-                                            <a class="dropdown-item mb-3" href="#">Accreditation</a>
-                                            <a class="dropdown-item mb-3" href="#">Latest News</a>
-                                            <a class="dropdown-item mb-3" href="#">Career Opportunities</a>
-                                        </div>
+                                <div class="dropdown-menu py-4 dropdown-logo-icon">
+                                    <div class="col-md-6 mb-2 mb-lg-0 position-relative menu-border">
+                                        <a class="dropdown-item mb-3" href="about-us.html">About IFG</a>
+                                        <a class="dropdown-item mb-3" href="ifg-team.html">IFG Team</a>
+                                        <a class="dropdown-item mb-3" href="ifg-history.html">IFG History</a>
+                                        <a class="dropdown-item mb-3" href="#">CSR</a>
                                     </div>
+                                    <div class="col-md-6 mb-2 mb-lg-0">
+                                        <a class="dropdown-item mb-3" href="#">Accreditation</a>
+                                        <a class="dropdown-item mb-3" href="#">Latest News</a>
+                                        <a class="dropdown-item mb-3" href="#">Career Opportunities</a>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item"><a class="nav-link pe-0" href="#">Agent Resources</a></li>
-                            <li class="nav-item d-block d-md-none"><a class="nav-link pe-0" href="#">Course Finder</a></li>
+                            <li class="nav-item d-block d-md-none"><a class="nav-link pe-0" href="#">Course Finder</a>
+                            </li>
                             <li class="nav-item d-block d-md-none"><a class="nav-link pe-0" href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -645,7 +675,7 @@
     <!--blogs end-->
 
     <!--university partners start-->
-    <section class="bg-grey py-6">
+    <section class="bg-grey py-4 py-md-6">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3">
@@ -772,7 +802,7 @@
 
 
     <!--Accreditations start-->
-    <section class="bg-grey py-5">
+    <section class="bg-grey py-5 d-none d-md-block">
         <div class="container">
             <div class="text-center">
                 <h2 class="text-secondary text-product-sans">Our Accreditations</h2>
@@ -780,30 +810,42 @@
 
             <div class="row mt-5 align-items-center">
                 <div class="col-md-2 dotted-border-right">
-                    <div class="">
-                        <img src="assets/img/feature/ifg-language-cert.png" class="img-fluid" alt="Language Cert"
-                            title="Language Cert" width="154" height="67" loading="lazy">
-                    </div>
+                    <a href="#">
+                        <div class="">
+                            <img src="assets/img/feature/ifg-language-cert.png" class="img-fluid w-100" alt="Language Cert"
+                                title="Language Cert" width="154" height="67" loading="lazy">
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-2 dotted-border-right">
-                    <img src="assets/img/feature/ifg-athe.png" class="img-fluid" alt="Athe" title="Athe" width="182"
+                    <a href="#">
+                    <img src="assets/img/feature/ifg-athe.png" class="img-fluid w-100" alt="Athe" title="Athe" width="182"
                         height="72" loading="lazy">
+                        </a>
                 </div>
                 <div class="col-md-2 dotted-border-right">
-                    <img src="assets/img/feature/ifg-qualifi-accredited.png" class="img-fluid" alt="Qualifi Accredited"
+                    <a href="#">
+                    <img src="assets/img/feature/ifg-qualifi-accredited.png" class="img-fluid w-100" alt="Qualifi Accredited"
                         title="Qualifi Accredited" width="182" height="58" loading="lazy">
+                        </a>
                 </div>
                 <div class="col-md-2 dotted-border-right">
-                    <img src="assets/img/feature/ifg-ncfe.png" class="img-fluid" alt="Ncfe" title="Ncfe" width="183"
+                    <a href="#">
+                    <img src="assets/img/feature/ifg-ncfe.png" class="img-fluid w-100" alt="Ncfe" title="Ncfe" width="183"
                         height="52" loading="lazy">
+                        </a>
                 </div>
                 <div class="col-md-2 dotted-border-right">
-                    <img src="assets/img/feature/ifg-asic.png" class="img-fluid" alt="Asic" title="Asic" width="178"
+                    <a href="#">
+                    <img src="assets/img/feature/ifg-asic.png" class="img-fluid w-100" alt="Asic" title="Asic" width="178"
                         height="88" loading="lazy">
+                        </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="assets/img/feature/ifg-trinity.png" class="img-fluid" alt="Trinity" title="Trinity"
+                    <a href="#">
+                    <img src="assets/img/feature/ifg-trinity.png" class="img-fluid w-100" alt="Trinity" title="Trinity"
                         width="178" height="88" loading="lazy">
+                        </a>
                 </div>
             </div>
 
@@ -812,7 +854,58 @@
     </section>
     <!--Accreditations end-->
 
-    <footer class="footer bg-light mt-7">
+     <!--Accreditations start-->
+     <section class="bg-grey py-5 d-block d-md-none">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-secondary text-product-sans">Our Accreditations</h2>
+            </div>
+
+            <div class="slider">
+                    <div class="text-center">
+                        <a href="#">
+                            <img src="assets/img/feature/ifg-language-cert.png" class="img-fluid" alt="Language Cert"
+                            title="Language Cert" width="154" height="67" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="#">
+                            <img src="assets/img/feature/ifg-athe.png" class="img-fluid" alt="Athe" title="Athe" width="182"
+                        height="72" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="#">
+                            <img src="assets/img/feature/ifg-qualifi-accredited.png" class="img-fluid" alt="Qualifi Accredited"
+                        title="Qualifi Accredited" width="182" height="58" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="#">
+                            <img src="assets/img/feature/ifg-ncfe.png" class="img-fluid" alt="Ncfe" title="Ncfe" width="183"
+                        height="52" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="#">
+                            <img src="assets/img/feature/ifg-asic.png" class="img-fluid" alt="Asic" title="Asic" width="178"
+                        height="88" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="#">
+                            <img src="assets/img/feature/ifg-trinity.png" class="img-fluid" alt="Trinity" title="Trinity"
+                        width="178" height="88" loading="lazy">
+                        </a>
+                    </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Accreditations end-->
+
+    <footer class="footer bg-light mt-4 mt-md-7">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-3">
@@ -891,7 +984,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 border-start">
+                <div class="col-md-6 col-lg-4 border-start">
                     <div class="d-flex align-items-center mb-3">
                         <h4 class="mb-0 text-secondary fs-5">Available Courses</h4> <i
                             class="bi bi-arrow-right ms-2 text-dark"></i>
@@ -912,8 +1005,8 @@
                         <li><a href="#" class="text-decoration-none">IFG Alumni</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <ul class="social-icon pt-5">
+                <div class="col-md-6 col-lg-2">
+                    <ul class="social-icon pt-3 pt-md-5">
                         <li>
                             <a class="btn-social bs-outline bs-facebook"
                                 href="https://www.facebook.com/InternationalFoundationGroup" target="_blank">
@@ -962,9 +1055,13 @@
                 </div>
             </div>
 
+            <div class="mt-4 bg-grey p-2">
+                <p class="mb-0 text-center">International Foundation Group (IFG) is the UK trading name of Education Pathways Ltd</p>
+            </div>
+
         </div>
 
-        <div class="mt-5">
+        <div class="mt-4">
             <div class="container border-top pt-3">
                 <div class="row">
                     <div class="col-md-6">
@@ -989,6 +1086,7 @@
     <script src="assets/js/intfoundationgroup.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/slick-min.js"></script>
     <script src="assets/js/slick.js"></script>
 </body>
 

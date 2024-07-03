@@ -89,22 +89,60 @@ $(document).ready(function () {
 
 
 /*partners say about us */
-$(document).ready(function() {
+$(document).ready(function () {
   const swiper = new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-      },
-      keyboard: {
-          enabled: true,
-          onlyInViewport: true,
-      },
-      navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev"
-          },
-      effect: 'slide',
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    effect: 'slide',
   });
-  
+
+});
+
+$(document).ready(function () {
+  $('.slider').slick({
+    dots: false,
+    prevArrow: $('.prev4'),
+    nextArrow: $('.next4'),
+    infinite: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }]
   });
+});
