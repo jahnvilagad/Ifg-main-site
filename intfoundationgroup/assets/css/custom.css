@@ -13,6 +13,32 @@
   src: url("../fonts/SairaSemiCondensed-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "ReenieBeanie-Regular";
+  src: url("../fonts/ReenieBeanie-Regular.ttf") format("truetype");
+}
+
+.text-reenie-beanie {
+  font-family: "ReenieBeanie-Regular", sans-serif;
+  font-size: 30px;
+  line-height: 27px;
+  transform: rotate(-16deg);
+}
+
+.university-partners-click {
+  position: absolute;
+  left: -7rem;
+  top: -3rem;
+}
+
+.arrow-vector-2 {
+  right: auto !important;
+  animation: unset !important;
+  transform: scaleX(-1);
+  left: 19px;
+  top: 5rem;
+}
+
 .page-loading {
   position: fixed;
   top: 0;
@@ -135,7 +161,7 @@ body::-webkit-scrollbar-thumb {
   width: 62%;
 }
 
-ul.list-type-none li::after{
+ul.list-type-none li::after {
   content: unset;
   border: unset;
 }
@@ -177,6 +203,8 @@ ul.list-type-none li::after{
 
 .about-img {
   margin-top: -155px;
+  z-index: 99;
+  position: relative;
 }
 
 .about-img-1 {
@@ -184,16 +212,24 @@ ul.list-type-none li::after{
 }
 
 .about-us p {
-  font-size: 50px;
-  background: linear-gradient(-45deg, #FFFFFF, #FAFCFF);
-  background-size: 200% 200%;
+  font-size: 70px;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.21), #fff);
+  background: -o-linear-gradient(right, rgba(255, 255, 255, 0.21), #fff);
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.21), #fff);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.21) 30%, #fff 70%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-stroke: 2px transparent;
-  color: #48AED9;
+  /* -webkit-text-fill-color: transparent; */
   writing-mode: vertical-lr;
   text-orientation: mixed;
   transform: rotate(180deg);
+  -webkit-text-stroke: 3px transparent;
+  -webkit-background-clip: text;
+  color: #48aed9;
+}
+
+.about-us span {
+  color: #fff;
 }
 
 
@@ -471,7 +507,7 @@ ul.list-type-none li::after{
     linear-gradient(to bottom, rgba(23, 71, 128, 1), rgba(72, 174, 217, 1)) border-box;
 }
 
-/* .bg-blue-shape::after {
+.bg-blue-shape::after {
   content: "";
   position: absolute;
   left: 0;
@@ -482,10 +518,11 @@ ul.list-type-none li::after{
   border-left: 20rem solid transparent;
   border-right: 105rem solid transparent;
   transform: scaleY(-1);
-} */
+}
 
 .ifg-bg-gradient {
   background: linear-gradient(135.47deg, rgba(255, 255, 255, 0) -0.16%, rgba(72, 174, 217, 0.35) 78.98%);
+  z-index: 1;
 }
 
 /* .breadcrumb-bg {
@@ -669,10 +706,6 @@ ul.list-type-none li::after{
   width: 63%;
 }
 
-.virtual-classrooom-bg {
-  background-color: rgba(72, 174, 217, 1);
-  height: 130px;
-}
 
 .text-gradient {
   background: -webkit-linear-gradient(left, #F97C20, #FEC054);
@@ -1325,12 +1358,188 @@ ul.navbar-nav li::after,
   position: absolute;
   background-image: url(../img/banner/how-to-apply.png);
   background-position: 100% center;
-  background-size: cover;
   right: 0;
   top: 0;
   width: 702px;
   height: 100%;
+  z-index: -1;
 }
+
+.about-us-breadcrumb::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/about-ifg.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 516px;
+  height: 100%;
+  z-index: -1;
+}
+
+.business-management::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/business-management.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 582px;
+  height: 100%;
+  z-index: -1;
+}
+
+.pathways-to-university::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/pathways-university.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 540px;
+  height: 100%;
+  z-index: -1;
+}
+
+.united-kindom::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/united-kindom.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 383px;
+  height: 100%;
+  z-index: -1;
+}
+
+.university-of-birmingham::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/university-of-birmingham.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 653px;
+  height: 100%;
+  z-index: -1;
+}
+
+.ifg-team::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/ifg-team.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 666px;
+  height: 100%;
+  z-index: -1;
+}
+
+.fees::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/fees.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 336px;
+  height: 100%;
+  z-index: -1;
+}
+
+.entry-requirements::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/entry-requirement.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 499px;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.accreditation::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/accreditation.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 499px;
+  height: 100%;
+  z-index: -1;
+}
+
+.student-visa::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/student-visa.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 668px;
+  height: 100%;
+  z-index: -1;
+}
+
+.pre-arrival::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/student-visa.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 668px;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+.arrow-vector-3{
+  top: 6rem;
+  bottom: auto;
+}
+
+
+.visa-process-arrow{
+  right: 3rem;
+  bottom: 2.5rem;
+  left: auto;
+}
+
+
+
+.degree-icon::before {
+  content: '';
+  background-image: url(../img/feature/degree-icon.png);
+  background-position: 100% center;
+  background-size: cover;
+  position: absolute;
+  left: -11rem;
+  top: 18%;
+  width: 182px;
+  height: 182px;
+}
+
+.book-icon::after {
+  content: '';
+  background-image: url(../img/feature/book-icon.png);
+  background-position: 100% center;
+  background-size: cover;
+  position: absolute;
+  right: -10rem;
+  top: 49%;
+  width: 147px;
+  height: 127px;
+}
+
 
 .testimonial-content-scroll::-webkit-scrollbar {
   width: 3px;
@@ -1742,7 +1951,8 @@ span.round-tab {
   background-color: rgba(193, 200, 208, 1);
 }
 
-.dropdown-mega .dropdown-menu::before {
+.dropdown-mega .dropdown-menu::before,
+.modal-bottom-border::before {
   content: '';
   background: -webkit-linear-gradient(left, rgba(72, 174, 217, 1) 50%, rgba(23, 71, 128, 1) 50%);
   height: 6px;
@@ -1762,8 +1972,207 @@ span.round-tab {
   background: rgba(233, 236, 241, 1);
   line-height: 42px;
 }
+
 .back-page-arrow i {
   font-size: 1.5rem;
+}
+
+.accommodation-flag {
+  right: 1rem;
+  top: 1rem;
+}
+
+.london-teaching-centre-bg::after {
+  content: '';
+  background: rgba(72, 174, 217, 1);
+  border-radius: 15px;
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  width: 390px;
+  height: 448px;
+  z-index: -1;
+}
+
+.arrow-vector {
+  position: absolute;
+  right: 5rem;
+  bottom: -5rem;
+  animation: zoominoutsinglefeatured 4s infinite;
+}
+
+.arrow-vector-1 {
+  right: -6rem;
+  bottom: 0rem;
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.3, 1.3);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.ifg-center {
+  position: absolute;
+  bottom: 9rem;
+  left: 2rem;
+}
+
+.ifg-center-slider-bg {
+  background: rgba(72, 174, 217, 1);
+  width: 60px;
+  height: 24px;
+  border-radius: 15px;
+}
+
+.ifg-center-teaching-center-bg {
+  background: rgba(255, 143, 108, 1);
+  width: 60px;
+  height: 24px;
+  border-radius: 15px;
+}
+
+.ifg-partner-teaching-center .carousel-control-prev-icon,
+.ifg-partner-teaching-center .carousel-control-next-icon {
+  border: 2px solid rgba(72, 174, 217, 1);
+  color: rgba(72, 174, 217, 1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 47px;
+  text-align: center;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about-us {
+  position: absolute;
+  left: -9rem;
+  top: 1rem;
+}
+
+.ifg-play-button {
+  border: 3px solid rgba(255, 255, 255, 1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(72, 174, 217, 1);
+  color: #fff;
+  font-size: 35px;
+  position: absolute;
+  bottom: 1rem;
+  right: 7rem;
+  text-align: center;
+  line-height: 47px;
+}
+
+/*ifg-advantages slider css start*/
+.owl-carousel {
+  transform: rotate(90deg);
+  width: 270px;
+  margin-top: 13rem;
+}
+
+.item {
+  transform: rotate(-90deg);
+}
+
+.owl-carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 33px);
+  display: none;
+}
+
+div.owl-carousel .owl-nav .owl-prev,
+div.owl-carousel .owl-nav .owl-next {
+  font-size: 36px;
+  top: unset;
+  bottom: 15px;
+}
+
+/*ifg-advantages slider css end*/
+.bg-slider::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(182.5deg, rgba(255, 255, 255, 0) 18%, #174780 116.91%);
+  width: 308px;
+  height: 91px;
+  bottom: 26px;
+  left: 0;
+  border-radius: 0 0 40px 40px;
+}
+
+.students-play-button {
+  opacity: 0;
+  background: rgba(255, 255, 255, 1);
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  padding: 1px 20px;
+  border-radius: 6px;
+  margin-right: -23px;
+  bottom: 3.8rem;
+  right: -2rem;
+}
+
+.students-ifg-play-button .ifg-play-button {
+  bottom: 3rem;
+  right: 5rem;
+}
+
+.students-img:hover .students-play-button {
+  opacity: 1;
+}
+
+.swiper-container-1 .bg-slider::after {
+  bottom: 0;
+}
+
+.swiper-container-1 .ifg-play-button {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.swiper-container-1 .swiper-button-next,
+.swiper-container-1 .swiper-button-prev {
+  background-image: unset;
+  font-size: 2.5rem;
+}
+
+@media (max-width:1440px) {
+  .book-icon::after {
+    right: -1rem;
+  }
+
+  .degree-icon::before {
+    left: -1rem;
+  }
+
+  .university-partners-click {
+    left: -5rem;
+  }
+
+  .carousel-control-prev {
+    left: 1rem;
+  }
+
+  .carousel-control-next {
+    right: 1rem;
+  }
+
+  .bg-blue-shape::after {
+    border-right: 70rem solid transparent;
+  }
 }
 
 @media (max-width:1366px) {
@@ -1772,6 +2181,14 @@ span.round-tab {
     left: 2rem;
     width: 85%;
     transform: translateY(-50%);
+  }
+
+  .bg-blue-shape::after {
+    border-right: 65rem solid transparent;
+  }
+
+  .university-partners-click {
+    left: -2rem;
   }
 }
 
@@ -1795,6 +2212,24 @@ span.round-tab {
   }
 }
 
+@media (max-width:1280px) {
+  .bg-blue-shape::after {
+    border-right: 60rem solid transparent;
+  }
+
+  .university-partners-click {
+    left: -1rem;
+  }
+
+  .arrow-vector-2 {
+    left: -7px;
+  }
+
+  .arrow-vector-2 img {
+    width: 81%;
+  }
+}
+
 
 @media (min-width:1025px) {
   .navbar-expand-lg .dropdown-mega.about-menu>.dropdown-menu {
@@ -1804,6 +2239,23 @@ span.round-tab {
 }
 
 @media (max-width:1024px) {
+  .swiper-container-1 .ifg-play-button {
+    right: 3rem;
+  }
+
+  .university-partners-click {
+    display: none;
+  }
+
+  .bg-blue-shape::after {
+    border-right: 44rem solid transparent;
+  }
+
+  .ifg-center {
+    bottom: 4rem;
+    left: 1rem;
+  }
+
   .journey-time {
     bottom: 8.5rem;
   }
@@ -1850,6 +2302,37 @@ span.round-tab {
 }
 
 @media (max-width:991px) {
+  .swiper-container-1 .ifg-play-button {
+    right: 5rem;
+  }
+
+  .book-icon::after,
+  .degree-icon::before {
+    display: unset;
+    background-image: unset;
+  }
+
+  .bg-blue-shape::after {
+    border-bottom: unset;
+  }
+
+  .ifg-center {
+    bottom: 0rem;
+  }
+
+  .arrow-vector {
+    right: 2rem;
+    bottom: -3rem;
+  }
+
+  .arrow-vector img {
+    width: 50%;
+  }
+
+  .column-3 ul {
+    columns: 2;
+  }
+
   .social-icon {
     width: 34%;
   }
@@ -1918,6 +2401,45 @@ span.round-tab {
 }
 
 @media (max-width:767px) {
+  .swiper-container-1 .media img {
+    width: 100% !important;
+  }
+
+  .students-img img {
+    width: 100%;
+  }
+
+  .students-ifg-play-button .ifg-play-button {
+    right: 3rem;
+  }
+
+  .students-play-button {
+    bottom: 3.7rem;
+    right: -2rem;
+    margin-right: -116px;
+  }
+
+  .ifg-center-teaching h2 {
+    font-size: 20px;
+  }
+
+  .arrow-vector {
+    right: 0rem;
+    bottom: .75rem;
+  }
+
+  .arrow-vector img {
+    width: 42%;
+  }
+
+  .carousel-indicators {
+    bottom: -5rem;
+  }
+
+  .column-3 ul {
+    columns: 1;
+  }
+
   .social-icon {
     width: 20%;
     padding: 0;

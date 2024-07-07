@@ -10,30 +10,31 @@
 
 
 
-
-var swiper = new Swiper('.swiper-partners-slider.swiper-testimonial', {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next-test',
-    prevEl: '.swiper-button-prev-test',
-  },
-  breakpoints: {
-    991: {
-      slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 50,
-    }
-  },
-});
+// $(document).ready(function () {
+// const slider = new Swiper('.swiper-testimonial', {
+//   slidesPerView: 2,
+//   spaceBetween: 30,
+//   loop: true,
+//   autoplay: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next-test',
+//     prevEl: '.swiper-button-prev-test',
+//   },
+//   breakpoints: {
+//     991: {
+//       slidesPerView: 1,
+//     },
+//     640: {
+//       slidesPerView: 1,
+//       spaceBetween: 50,
+//     }
+//   },
+// });
+// });
 
 
 
@@ -91,10 +92,45 @@ $(document).ready(function () {
 /*partners say about us */
 $(document).ready(function () {
   const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2,
     loop: true,
+    dots: true,
     autoplay: {
       delay: 4000,
       disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    effect: 'slide',
+  });
+
+});
+
+$(document).ready(function () {
+  const swiper = new Swiper('.swiper-container-1', {
+    slidesPerView: 1,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    dots: true,
+    arrows: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
     keyboard: {
       enabled: true,
@@ -144,5 +180,20 @@ $(document).ready(function () {
           slidesToScroll: 2
         }
       }]
+  });
+});
+
+$(document).ready(function () {
+
+  $(".owl-carousel").owlCarousel({
+    items: 3,
+    loop: false,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    rewind: true,
+    autoplay: true,
+    margin: 0,
+    nav: true
   });
 });
