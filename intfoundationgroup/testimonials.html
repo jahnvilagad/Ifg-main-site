@@ -382,7 +382,7 @@
     </header>
     <!-- Page content-->
 
-    <section class="ifg-bg-gradient py-5 position-relative">
+    <section class="ifg-bg-gradient py-5 position-relative testimonials">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -416,8 +416,15 @@
             <div class="col-md-6 mt-0 mt-md-4">
                 <div class="row">
                     <div class="col-md-5">
-                        <img class="rounded img-fluid" src="assets/img/feature/ifg-students-1.webp" alt="Student"
-                            title="Student" width="259" height="346" loading="lazy" />
+                        <div class="uk-students bg-slider position-relative">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                <img class="rounded img-fluid" src="assets/img/feature/ifg-students-1.webp"
+                                    alt="Student" title="Student" width="259" height="346" loading="lazy" />
+                                <div class="ifg-play-button zindex-1">
+                                    <i class="bi bi-play-fill"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-7 py-4">
                         <p class="testimonial-content-scroll">Our main offer is our range of University Foundation
@@ -434,8 +441,15 @@
             <div class="col-md-6 mt-0 mt-md-4">
                 <div class="row">
                     <div class="col-md-5">
-                        <img class="rounded img-fluid" src="assets/img/feature/ifg-students-2.webp" alt="Student"
-                            title="Student" width="259" height="346" loading="lazy" />
+                        <div class="uk-students bg-slider position-relative">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                <img class="rounded img-fluid" src="assets/img/feature/ifg-students-2.webp"
+                                    alt="Student" title="Student" width="259" height="346" loading="lazy" />
+                                <div class="ifg-play-button zindex-1">
+                                    <i class="bi bi-play-fill"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-7 py-4">
                         <p class="testimonial-content-scroll">Our main offer is our range of University Foundation
@@ -452,8 +466,12 @@
             <div class="col-md-6 mt-0 mt-md-4">
                 <div class="row">
                     <div class="col-md-5">
-                        <img class="rounded img-fluid" src="assets/img/feature/ifg-testimonial-1.webp" alt="Testimonial"
-                            title="Testimonial" width="259" height="346" loading="lazy" />
+                        <div class="uk-students bg-slider position-relative">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                <img class="rounded img-fluid" src="assets/img/feature/ifg-testimonial-1.webp"
+                                    alt="Student" title="Student" width="259" height="346" loading="lazy" />
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-7 py-4">
                         <p class="testimonial-content-scroll">Our main offer is our range of University Foundation
@@ -470,8 +488,15 @@
             <div class="col-md-6 mt-0 mt-md-4">
                 <div class="row">
                     <div class="col-md-5">
-                        <img class="rounded img-fluid" src="assets/img/feature/ifg-testimonial-2.webp" alt="Testimonial"
-                            title="Testimonial" width="259" height="346" loading="lazy" />
+                        <div class="uk-students bg-slider position-relative">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                <img class="rounded img-fluid" src="assets/img/feature/ifg-testimonial-2.webp"
+                                    alt="Student" title="Student" width="259" height="346" loading="lazy" />
+                                    <div class="ifg-play-button zindex-1">
+                                        <i class="bi bi-play-fill"></i>
+                                    </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-7 py-4">
                         <p class="testimonial-content-scroll">Our main offer is our range of University Foundation
@@ -826,6 +851,21 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="ifg-message" tabindex="-1" role="dialog" aria-modal="false">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content dropdown-logo-icon zindex-1">
+                <div class="modal-header">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls class='video w-100'>
+                        <source src="assets/img/Ifg-hero-video.m4v" type="video/mp4" class="" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to top button-->
     <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>

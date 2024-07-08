@@ -437,75 +437,56 @@
                 <div class="tab-content mt-5">
                     <div class="tab-pane fade active show" id="uk" role="tabpanel">
                         <div class="table-responsive mb-3">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr class="bg-grey">
-                                        <th>Courses Name</th>
-                                        <th class="text-center">Fees</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr class="bg-grey">
+                                                <th>Courses Name</th>
+                                                <th class="text-center">Fees</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="bg-grey">
+
+                                                <td class="accordion-button bg-grey" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne" colspan="2">
+                                                    1.
+                                                    Foundation Programmes
+                                                </td>
+
+                                            </tr>
+                                            <tr class="accordion-collapse collapse show" id="collapseOne"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <td>
+                                                    University Foundation Programme in Business Management
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="fee-amount">£14,000</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-collapse collapse show" id="collapseOne"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <td>
+                                                    University Foundation Programme in Business Management
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="fee-amount">£14,000</div>
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
                                         <td>
                                             <div class="accordion" id="accordionExample">
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="headingOne">
                                                         <button class="accordion-button" type="button"
                                                             data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                            aria-expanded="true" aria-controls="collapseOne">1. There
-                                                            are so
-                                                            many
-                                                            schools in the UK How do I decide which schools to apply
-                                                            to?</button>
+                                                            aria-expanded="true" aria-controls="collapseOne">1.
+                                                            Foundation Programmes </button>
                                                     </h2>
                                                     <div class="accordion-collapse collapse show" id="collapseOne"
                                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <p><span class="text-secondary">Ans.</span> Research your
-                                                                options
-                                                                and define your priorities.
-                                                                Contact the Education UK
-                                                                advising center nearest you and browse college search
-                                                                engines
-                                                                online. Check to see if the
-                                                                schools your are considering are accredited.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="headingTwo">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                            aria-expanded="false" aria-controls="collapseTwo">2. Are
-                                                            there age
-                                                            limitations to attend UK universities?</button>
-                                                    </h2>
-                                                    <div class="accordion-collapse collapse" id="collapseTwo"
-                                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <p><span class="text-secondary">Ans.</span> Research your
-                                                                options
-                                                                and define your priorities.
-                                                                Contact the Education UK
-                                                                advising center nearest you and browse college search
-                                                                engines
-                                                                online. Check to see if the
-                                                                schools your are considering are accredited.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="headingThree">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                            aria-expanded="false" aria-controls="collapseThree">3. What
-                                                            is
-                                                            the difference between "Undergraduate" and "Graduate"
-                                                            degrees?</button>
-                                                    </h2>
-                                                    <div class="accordion-collapse collapse" id="collapseThree"
-                                                        aria-labelledby="headingThree"
-                                                        data-bs-parent="#accordionExample">
                                                         <div class="accordion-body">
                                                             <p><span class="text-secondary">Ans.</span> Research your
                                                                 options
@@ -523,39 +504,41 @@
                                         <td class="text-center">
                                             <div class="fee-amount">£12,000.00*</div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>University Foundation Programme in Business Management</td>
-                                        <td class="text-center">
-                                            <div class="fee-amount">£12,000.00*</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>University Foundation Programme in Engineering</td>
-                                        <td class="text-center">
-                                            <div class="fee-amount">£18,000.00</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>University Foundation Programme in Social Sciences</td>
-                                        <td class="text-center">
-                                            <div class="fee-amount">£9,000.00</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>University Foundation Programme in Computer Science</td>
-                                        <td class="text-center">
-                                            <div class="fee-amount">£9,000.00</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Medical Foundation Programme</td>
-                                        <td class="text-center">
-                                            <div class="fee-amount">£9,000.00</div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                    </tr> -->
+                                            <tr>
+                                                <td>University Foundation Programme in Business Management</td>
+                                                <td class="text-center">
+                                                    <div class="fee-amount">£12,000.00*</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>University Foundation Programme in Engineering</td>
+                                                <td class="text-center">
+                                                    <div class="fee-amount">£18,000.00</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>University Foundation Programme in Social Sciences</td>
+                                                <td class="text-center">
+                                                    <div class="fee-amount">£9,000.00</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>University Foundation Programme in Computer Science</td>
+                                                <td class="text-center">
+                                                    <div class="fee-amount">£9,000.00</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Medical Foundation Programme</td>
+                                                <td class="text-center">
+                                                    <div class="fee-amount">£9,000.00</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="uae" role="tabpanel">

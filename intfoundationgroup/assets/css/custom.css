@@ -1498,6 +1498,217 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
+.english-placement-test::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/english-placement-test.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 624px;
+  height: 100%;
+  z-index: -1;
+}
+
+.life-in-the-uk::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/life-in-the-uk.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 662px;
+  height: 100%;
+  z-index: -1;
+}
+
+.togetherall-text::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/togetherall.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 686px;
+  height: 100%;
+  z-index: -1;
+}
+
+.student-handbook-text::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/student-handbook.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 509px;
+  height: 100%;
+  z-index: -1;
+}
+
+.latest-news-text::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/latest-news.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 638px;
+  height: 100%;
+  z-index: -1;
+}
+
+.accommodation::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/accommodation.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 898px;
+  height: 100%;
+  z-index: -1;
+}
+
+.faqs-text::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/faqs.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 378px;
+  height: 100%;
+  z-index: -1;
+}
+
+.teaching-centres::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/teaching-centre.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 946px;
+  height: 100%;
+  z-index: -1;
+}
+
+.study-in-london::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/study-in-london.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 870px;
+  height: 100%;
+  z-index: -1;
+}
+
+.testimonials::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/testimonials.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 692px;
+  height: 100%;
+  z-index: -1;
+}
+
+.upcoming-events::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/upcoming-events.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 916px;
+  height: 100%;
+  z-index: -1;
+}
+
+.agent-resources::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/agent-resourses.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 916px;
+  height: 100%;
+  z-index: -1;
+}
+.become-partner-centre::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/become-a-partner.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 471px;
+  height: 100%;
+  z-index: -1;
+}
+
+.foundation-programmes::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/foundation-programmes.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 670px;
+  height: 100%;
+  z-index: -1;
+}
+.policies::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/policies.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 642px;
+  height: 100%;
+  z-index: -1;
+}
+.other-costs::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/other-costs.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 658px;
+  height: 100%;
+  z-index: -1;
+}
+
+.what-to-bring::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/what-to-bring.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 754px;
+  height: 100%;
+  z-index: -1;
+}
+.csr::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/banner/csr.png);
+  background-position: 100% center;
+  right: 0;
+  top: 0;
+  width: 470px;
+  height: 100%;
+  z-index: -1;
+}
 
 
 
@@ -1507,15 +1718,11 @@ ul.navbar-nav li::after,
   bottom: auto;
 }
 
-
 .visa-process-arrow{
   right: 3rem;
   bottom: 2.5rem;
   left: auto;
 }
-
-
-
 .degree-icon::before {
   content: '';
   background-image: url(../img/feature/degree-icon.png);
@@ -2105,7 +2312,7 @@ div.owl-carousel .owl-nav .owl-next {
   content: '';
   position: absolute;
   background: linear-gradient(182.5deg, rgba(255, 255, 255, 0) 18%, #174780 116.91%);
-  width: 308px;
+  width: 100%;
   height: 91px;
   bottom: 26px;
   left: 0;
@@ -2147,6 +2354,81 @@ div.owl-carousel .owl-nav .owl-next {
 .swiper-container-1 .swiper-button-prev {
   background-image: unset;
   font-size: 2.5rem;
+}
+
+
+
+.testimonial-slider ul li::after {
+  content: unset;
+  position: unset;
+  border: unset;
+  }
+
+  .testimonial-slider ul li button {
+    border: unset;
+    background-color: #B9C0CC;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transition: all 3s;
+}
+
+
+.testimonial-slider .slick-dots{
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.testimonial-slider ul li.slick-active button{
+  background: #274E7F;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.client-img{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.client-img i {
+  color: #48AED9;
+  font-size: 2rem;
+  line-height: 65px;
+}
+
+.uk-students.bg-slider::after {
+    bottom: 0;
+}
+
+.uk-students .ifg-play-button {
+  bottom: 1.5rem;
+  right: 2rem;
+}
+
+.quote-img::after{
+  content: '';
+  background-image: url(../img/feature/quote-left.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5rem;
+  top: 4rem;
+  width: 136px;
+  height:95px;
+}
+.quote-img::before{
+  content: '';
+  background-image: url(../img/feature/quote-right.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 136px;
+  height:95px;
 }
 
 @media (max-width:1440px) {
@@ -2299,9 +2581,15 @@ div.owl-carousel .owl-nav .owl-next {
   .team-arrow {
     right: 7rem;
   }
+  .include-border::after{
+    border: unset;
+  }
 }
 
 @media (max-width:991px) {
+  .quote-img::after{
+    left: 1rem;
+  }
   .swiper-container-1 .ifg-play-button {
     right: 5rem;
   }
@@ -2401,6 +2689,11 @@ div.owl-carousel .owl-nav .owl-next {
 }
 
 @media (max-width:767px) {
+  .quote-img::after , .quote-img::before{
+    background-image: unset;
+    content: unset;
+    position: unset;
+  }
   .swiper-container-1 .media img {
     width: 100% !important;
   }

@@ -112,6 +112,20 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev"
     },
     effect: 'slide',
+    breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        },
   });
 
 });
@@ -187,7 +201,7 @@ $(document).ready(function () {
 
   $(".owl-carousel").owlCarousel({
     items: 3,
-    loop: false,
+    loop: true,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
@@ -196,4 +210,40 @@ $(document).ready(function () {
     margin: 0,
     nav: true
   });
+});
+
+
+//ifg advantage slider
+$(document).ready(function () {
+$('.testimonial-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots:true,
+  arrows:false,
+  infinite: true,
+  cssEase: 'linear',
+  speed:1000,
+  vertical:true,
+  autoplay:true,
+  autoplaySpeed:2000,
+  rows:1,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical:false,
+        rows:1
+      }
+    }
+    
+  ]
+});
+
+});
+
+
+$(document).ready(function(){
+  $(".testimonial-slider button").empty();
 });
