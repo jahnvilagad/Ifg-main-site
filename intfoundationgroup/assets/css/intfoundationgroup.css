@@ -13807,7 +13807,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed)::after {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='121.805' height='121.804'%3e%3cpath fill-rule='evenodd' fill='%23766df4' d='M7.308 68.211h107.188a7.31 7.31 0 0 0 7.309-7.31 7.31 7.31 0 0 0-7.309-7.309H7.308A7.31 7.31 0 0 0 0 60.902a7.31 7.31 0 0 0 7.308 7.309z'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='121.805' height='121.804'%3e%3cpath fill-rule='evenodd' fill='%234a4b65' d='M7.308 68.211h107.188a7.31 7.31 0 0 0 7.309-7.31 7.31 7.31 0 0 0-7.309-7.309H7.308A7.31 7.31 0 0 0 0 60.902a7.31 7.31 0 0 0 7.308 7.309z'/%3e%3c/svg%3e");
 	transform: rotate(-180deg)
 }
 

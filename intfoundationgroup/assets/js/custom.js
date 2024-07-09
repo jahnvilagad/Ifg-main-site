@@ -160,7 +160,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.slider').slick({
+  $('.slider-accreditations').slick({
     dots: false,
     prevArrow: $('.prev4'),
     nextArrow: $('.next4'),
@@ -246,4 +246,22 @@ $('.testimonial-slider').slick({
 
 $(document).ready(function(){
   $(".testimonial-slider button").empty();
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize LightGallery
+  const lightGalleryElement = document.getElementById('lightgallery');
+  lightGallery(lightGalleryElement, {
+      plugins: [lgThumbnail, lgZoom],
+      thumbnail: true,
+      animateThumb: false,
+      showThumbByDefault: false
+  });
+
+  // Trigger LightGallery when the single image is clicked
+  document.getElementById('triggerImage').addEventListener('click', function() {
+      lightGalleryElement.querySelector('a').click();
+  });
 });

@@ -1224,6 +1224,29 @@ ul.list-type-none li::after {
   position: relative;
 }
 
+.fees table .accordion-button {
+  display: table-cell;
+}
+
+.fees table .accordion-button::after {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+}
+
+.fees table .accordion-collapse {
+  color: #000;
+}
+
+.fees .nav-tabs .nav-item {
+  width: 32%;
+  text-align: center;
+}
+
+.fees table .accordion-collapse {
+  border: 1px solid #e9e9f2 !important;
+}
+
 .fee-amount {
   border: 2px solid rgba(0, 198, 189, 1);
   background: rgba(0, 198, 189, 0.12);
@@ -1462,7 +1485,7 @@ ul.navbar-nav li::after,
 }
 
 
-.accreditation::after{
+.accreditation::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/accreditation.png);
@@ -1474,7 +1497,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.student-visa::after{
+.student-visa::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/student-visa.png);
@@ -1486,7 +1509,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.pre-arrival::after{
+.pre-arrival::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/student-visa.png);
@@ -1498,7 +1521,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.english-placement-test::after{
+.english-placement-test::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/english-placement-test.png);
@@ -1510,7 +1533,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.life-in-the-uk::after{
+.life-in-the-uk::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/life-in-the-uk.png);
@@ -1522,7 +1545,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.togetherall-text::after{
+.togetherall-text::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/togetherall.png);
@@ -1534,7 +1557,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.student-handbook-text::after{
+.student-handbook-text::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/student-handbook.png);
@@ -1546,7 +1569,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.latest-news-text::after{
+.latest-news-text::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/latest-news.png);
@@ -1558,7 +1581,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.accommodation::after{
+.accommodation::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/accommodation.png);
@@ -1570,7 +1593,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.faqs-text::after{
+.faqs-text::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/faqs.png);
@@ -1582,7 +1605,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.teaching-centres::after{
+.teaching-centres::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/teaching-centre.png);
@@ -1594,7 +1617,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.study-in-london::after{
+.study-in-london::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/study-in-london.png);
@@ -1606,7 +1629,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.testimonials::after{
+.testimonials::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/testimonials.png);
@@ -1618,7 +1641,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.upcoming-events::after{
+.upcoming-events::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/upcoming-events.png);
@@ -1630,7 +1653,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.agent-resources::after{
+.agent-resources::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/agent-resourses.png);
@@ -1641,7 +1664,8 @@ ul.navbar-nav li::after,
   height: 100%;
   z-index: -1;
 }
-.become-partner-centre::after{
+
+.become-partner-centre::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/become-a-partner.png);
@@ -1653,7 +1677,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.foundation-programmes::after{
+.foundation-programmes::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/foundation-programmes.png);
@@ -1664,7 +1688,8 @@ ul.navbar-nav li::after,
   height: 100%;
   z-index: -1;
 }
-.policies::after{
+
+.policies::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/policies.png);
@@ -1675,7 +1700,8 @@ ul.navbar-nav li::after,
   height: 100%;
   z-index: -1;
 }
-.other-costs::after{
+
+.other-costs::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/other-costs.png);
@@ -1687,7 +1713,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.what-to-bring::after{
+.what-to-bring::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/what-to-bring.png);
@@ -1698,7 +1724,8 @@ ul.navbar-nav li::after,
   height: 100%;
   z-index: -1;
 }
-.csr::after{
+
+.csr::after {
   content: '';
   position: absolute;
   background-image: url(../img/banner/csr.png);
@@ -1713,16 +1740,17 @@ ul.navbar-nav li::after,
 
 
 
-.arrow-vector-3{
+.arrow-vector-3 {
   top: 6rem;
   bottom: auto;
 }
 
-.visa-process-arrow{
+.visa-process-arrow {
   right: 3rem;
   bottom: 2.5rem;
   left: auto;
 }
+
 .degree-icon::before {
   content: '';
   background-image: url(../img/feature/degree-icon.png);
@@ -1875,7 +1903,7 @@ ul.navbar-nav li::after,
   border: 1px dashed rgba(184, 184, 184, 1);
 }
 
-.timeline-article .meta-date {
+.ifg-history .meta-date {
   background-color: #48AED9 !important;
   height: 43px;
   width: 3px;
@@ -2329,7 +2357,7 @@ div.owl-carousel .owl-nav .owl-next {
   border-radius: 6px;
   margin-right: -23px;
   bottom: 3.8rem;
-  right: -2rem;
+  right: -1rem;
 }
 
 .students-ifg-play-button .ifg-play-button {
@@ -2339,6 +2367,19 @@ div.owl-carousel .owl-nav .owl-next {
 
 .students-img:hover .students-play-button {
   opacity: 1;
+}
+.students-img::after{
+  width: 84%;
+}
+
+.undergraduate-subject .nav-tabs .nav-item{
+  width: auto;
+}
+
+.undergraduate-subject .nav-link {
+  font-weight: 700;
+  font-size: 16px;
+  padding: .5625rem 5px;
 }
 
 .swiper-container-1 .bg-slider::after {
@@ -2362,32 +2403,32 @@ div.owl-carousel .owl-nav .owl-next {
   content: unset;
   position: unset;
   border: unset;
-  }
+}
 
-  .testimonial-slider ul li button {
-    border: unset;
-    background-color: #B9C0CC;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    transition: all 3s;
+.testimonial-slider ul li button {
+  border: unset;
+  background-color: #B9C0CC;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: all 3s;
 }
 
 
-.testimonial-slider .slick-dots{
+.testimonial-slider .slick-dots {
   position: absolute;
   right: 0;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
-.testimonial-slider ul li.slick-active button{
+.testimonial-slider ul li.slick-active button {
   background: #274E7F;
   height: 35px;
   border-radius: 8px;
 }
 
-.client-img{
+.client-img {
   background-color: #fff;
   border-radius: 50%;
   width: 70px;
@@ -2402,7 +2443,7 @@ div.owl-carousel .owl-nav .owl-next {
 }
 
 .uk-students.bg-slider::after {
-    bottom: 0;
+  bottom: 0;
 }
 
 .uk-students .ifg-play-button {
@@ -2410,7 +2451,7 @@ div.owl-carousel .owl-nav .owl-next {
   right: 2rem;
 }
 
-.quote-img::after{
+.quote-img::after {
   content: '';
   background-image: url(../img/feature/quote-left.png);
   background-repeat: no-repeat;
@@ -2418,9 +2459,10 @@ div.owl-carousel .owl-nav .owl-next {
   left: 5rem;
   top: 4rem;
   width: 136px;
-  height:95px;
+  height: 95px;
 }
-.quote-img::before{
+
+.quote-img::before {
   content: '';
   background-image: url(../img/feature/quote-right.png);
   background-repeat: no-repeat;
@@ -2428,8 +2470,49 @@ div.owl-carousel .owl-nav .owl-next {
   right: 0;
   bottom: 0;
   width: 136px;
-  height:95px;
+  height: 95px;
 }
+
+.fees-bg {
+  background: rgba(236, 246, 250, 1);
+}
+
+.carousel .carousel-item h1 {
+  font-size: 3.5rem;
+}
+
+header .navbar .offcanvas-header .btn-close {
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%234a4b65'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.625em auto no-repeat;
+}
+
+.image-icon {
+  border: 2px solid rgba(255, 255, 255, 1);
+  background: rgba(9, 9, 9, 1);
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  line-height: 50px;
+}
+
+.image-icon i {
+  font-size: 1.5rem;
+}
+
+.photos-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 50px;
+  padding: 7px 10px;
+}
+
 
 @media (max-width:1440px) {
   .book-icon::after {
@@ -2495,6 +2578,14 @@ div.owl-carousel .owl-nav .owl-next {
 }
 
 @media (max-width:1280px) {
+  .about-img {
+    margin-left: 35px;
+  }
+
+  .about-us {
+    left: -7rem;
+  }
+
   .bg-blue-shape::after {
     border-right: 60rem solid transparent;
   }
@@ -2521,6 +2612,10 @@ div.owl-carousel .owl-nav .owl-next {
 }
 
 @media (max-width:1024px) {
+  .arrow-vector {
+    bottom: -3rem;
+  }
+
   .swiper-container-1 .ifg-play-button {
     right: 3rem;
   }
@@ -2581,15 +2676,38 @@ div.owl-carousel .owl-nav .owl-next {
   .team-arrow {
     right: 7rem;
   }
-  .include-border::after{
+
+  .include-border::after {
     border: unset;
   }
 }
 
 @media (max-width:991px) {
-  .quote-img::after{
+  .about-img-1 {
+    margin-top: 2rem;
+  }
+
+  .ifg-center-teaching h2 {
+    font-size: 26px;
+  }
+
+  .ifg-play-button {
+    right: 1rem;
+  }
+
+  .carousel .carousel-item h1 {
+    font-size: 2.5rem;
+  }
+
+  .fees .nav-tabs .nav-item {
+    width: auto;
+    text-align: left;
+  }
+
+  .quote-img::after {
     left: 1rem;
   }
+
   .swiper-container-1 .ifg-play-button {
     right: 5rem;
   }
@@ -2680,6 +2798,10 @@ div.owl-carousel .owl-nav .owl-next {
   }
 
   .timeline-article .meta-date {
+    margin-left: 10px;
+  }
+
+  .ifg-history .meta-date{
     margin-left: 30px;
   }
 
@@ -2689,11 +2811,42 @@ div.owl-carousel .owl-nav .owl-next {
 }
 
 @media (max-width:767px) {
-  .quote-img::after , .quote-img::before{
+  #become-a-partner-center .btn {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  span.round-tab {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .connecting-line {
+    top: 15px;
+  }
+
+  .wizard li.active span.round-tab:after {
+    right: -1rem;
+    top: 14px;
+  }
+
+  .navbar-brand img {
+    width: 180px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 18px;
+  }
+
+  .quote-img::after,
+  .quote-img::before {
     background-image: unset;
     content: unset;
     position: unset;
   }
+
   .swiper-container-1 .media img {
     width: 100% !important;
   }
@@ -2702,6 +2855,7 @@ div.owl-carousel .owl-nav .owl-next {
     width: 100%;
   }
 
+ 
   .students-ifg-play-button .ifg-play-button {
     right: 3rem;
   }
@@ -2766,6 +2920,9 @@ div.owl-carousel .owl-nav .owl-next {
   }
 
   .timeline-article .meta-date {
+    margin-left: 10px;
+  }
+  .ifg-history .meta-date {
     margin-left: 30px;
   }
 
