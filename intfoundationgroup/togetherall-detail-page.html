@@ -40,7 +40,7 @@
     <header class="header">
         <div class="topbar topbar-dark bg-dark">
             <div class="container d-flex align-items-center px-0 px-xl-3">
-                <div class="text-nowrap me-3">
+                <div class="text-nowrap me-3  d-none d-lg-block">
                     <div class="dropdown ms-auto ms-md-0 px-3 bg-light">
                         <a class="topbar-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">
                             <img class="me-2" src="assets/img/feature/logo-google-icon.png" alt="Google icon"
@@ -60,40 +60,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex text-md-end ms-md-auto">
-                    <a class="topbar-link px-2 py-2 bg-secondary" href="#"><i
+                <div class="d-flex text-md-end ms-auto">
+                    <a class="topbar-link px-2 py-2 bg-secondary" href="courses-filters.html"><i
                             class="bi bi-search fs-base opacity-60 me-1 align-middle"></i>Course Finder</a>
-                    <a class="topbar-link px-2 py-2 bg-success" href="#">Apply Now</a>
-                    <a class="topbar-link px-2 py-2 bg-info" href="#">Contact</a>
+                    <a class="topbar-link px-2 py-2 bg-primary d-none d-lg-block" href="accommodation.html">Accommodation</a>
+                    <a class="topbar-link px-2 py-2 bg-success" href="application-form.html">Apply Now</a>
+                    <a class="topbar-link px-2 py-2 bg-info d-none d-lg-block" href="contact-us.html">Contact</a>
                 </div>
             </div>
         </div>
         <div class="navbar navbar-expand-lg navbar-light bg-light navbar-shadow navbar-sticky" data-scroll-header
             data-fixed-element>
-            <div class="navbar-search bg-light">
-                <div class="container d-flex flex-nowrap align-items-center"><i class="ai-search fs-xl"></i>
-                    <input class="form-control form-control-xl navbar-search-field" type="text"
-                        placeholder="Search site">
-                    <div class="d-none d-sm-block flex-shrink-0 ps-2 me-4 border-start border-end"
-                        style="width: 10rem;">
-                        <select class="form-select ps-2 pe-0">
-                            <option value="all">All categories</option>
-                            <option value="clothing">Clothing</option>
-                            <option value="shoes">Shoes</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="accessoriies">Accessories</option>
-                            <option value="software">Software</option>
-                            <option value="automotive">Automotive</option>
-                        </select>
-                    </div>
-                    <div class="d-flex align-items-center"><span
-                            class="text-muted fs-xs d-none d-sm-inline">Close</span>
-                        <button class="btn-close p-2" type="button" data-bs-toggle="search"></button>
-                    </div>
-                </div>
-            </div>
             <div class="container px-0 px-xl-3">
-
+                <a class="navbar-brand flex-shrink-0 d-block d-xl-none" href="index.html">
+                    <img class="img-fluid" src="assets/img/logo/ifg-logo.png" alt="logo" title="logo" width="250"
+                        height="55" loading="lazy">
+                </a>
 
                 <div class="offcanvas offcanvas-collapse order-lg-1" id="primaryMenu">
                     <div class="offcanvas-header navbar-shadow">
@@ -104,274 +86,230 @@
                     <div class="offcanvas-body">
                         <!-- Menu-->
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#">Our Courses</a></li>
+                            <li class="nav-item"><a class="nav-link ps-xl-0" href="courses.html">Our Courses</a></li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Teaching
+                                    Centres</a>
+                                <div class="dropdown-menu py-4 align-items-center dropdown-logo-icon">
+                                    <div class="col-md-3 mb-2 mb-lg-0 position-relative menu-border">
+                                        <a class="dropdown-item mb-4 text-secondary fw-bold"
+                                            href="teaching-centre.html">IFG Teaching
+                                            Centres <i class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-4" href="teaching-centre-london-detail-page.html">
+                                            <img src="assets/img/feature/uk-icon.png" class="img-fluid me-2" alt="Uk"
+                                                title="Uk" width="32" height="32" loading="lazy"> London, UK</a>
+                                        <a class="dropdown-item mb-4" href="#">
+                                            <img src="assets/img/feature/uae-icon.png" class="img-fluid me-2" alt="Uae"
+                                                title="Uae" width="32" height="32" loading="lazy">Abu Dhabi, UAE</a>
+                                        <a class="dropdown-item mb-4" href="#">
+                                            <img src="assets/img/feature/uae-icon.png" class="img-fluid me-2" alt="Uae"
+                                                title="Uae" width="32" height="32" loading="lazy">Dubai, UAE</a>
+                                    </div>
+                                    <div class="col-md-7 mb-2 mb-lg-0">
+                                        <a class="dropdown-item mb-4 text-secondary fw-bold" href="#">IFG Partner
+                                            Teaching Centres <i class="bi bi-arrow-right"></i></a>
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="partner-teaching-centre-azerbaijan-detail-page.html">
+                                                    <img src="assets/img/feature/azerbaijan-icon.png"
+                                                        class="img-fluid me-2" alt="azerbaijan" title="azerbaijan"
+                                                        width="32" height="32" loading="lazy"> Azerbaijan</a>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="#">
+                                                    <img src="assets/img/feature/south-korea-icon.png"
+                                                        class="img-fluid me-2" alt="South Korea" title="South Korea"
+                                                        width="32" height="32" loading="lazy">South Korea</a>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="#">
+                                                    <img src="assets/img/feature/republic-of-iraq-icon.png"
+                                                        class="img-fluid me-2" alt="Republic of Iraq"
+                                                        title="Republic of Iraq" width="32" height="32"
+                                                        loading="lazy">Republic of Iraq</a>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="#">
+                                                    <img src="assets/img/feature/georgia-icon.png"
+                                                        class="img-fluid me-2" alt="Georgia" title="Georgia" width="32"
+                                                        height="32" loading="lazy">Georgia</a>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="#">
+                                                    <img src="assets/img/feature/malasiya-icon.png"
+                                                        class="img-fluid me-2" alt="Malaysia" title="Malaysia"
+                                                        width="32" height="32" loading="lazy">Malaysia</a>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="#">
+                                                    <img src="assets/img/feature/turkey-icon.png" class="img-fluid me-2"
+                                                        alt="Turkey" title="Turkey" width="32" height="32"
+                                                        loading="lazy">Turkey</a>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="#">
+                                                    <img src="assets/img/feature/jordan-icon.png" class="img-fluid me-2"
+                                                        alt="Jordan" title="Jordan" width="32" height="32"
+                                                        loading="lazy">Jordan</a>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <a class="dropdown-item mb-4" href="#">
+                                                    <img src="assets/img/feature/nigeria-icon.png"
+                                                        class="img-fluid me-2" alt="Nigeria" title="Nigeria" width="32"
+                                                        height="32" loading="lazy">Nigeria</a>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="col-md-2 mb-2 mb-lg-0">
+                                        <a href="becone-a-partner-centre.html" class="d-none d-xl-block">
+                                            <div class="position-relative become-partner-img">
+                                                <img src="assets/img/feature/ifg-header-teaching-centre.png"
+                                                    class="img-fluid" alt="Teaching Centre" title="Teaching Centre"
+                                                    width="231" height="263" loading="lazy">
+                                                <div class="become-partner-bg">
+                                                    <p class="text-white mb-0">Become a Partner <br> Teaching Centre <i
+                                                            class="bi bi-arrow-up-right-circle ms-2"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item mb-3 d-block d-xl-none"
+                                            href="becone-a-partner-centre.html">Become a Partner Teaching Centre</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="pathways-to-university.html">Pathways to University</a></li>
+                            <a class="navbar-brand flex-shrink-0  d-none d-xl-block me-0" href="index.html">
+                                <img class="img-fluid" src="assets/img/logo/ifg-logo.png" alt="logo" title="logo"
+                                    width="250" height="55" loading="lazy">
+                            </a>
                             <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#"
-                                    data-bs-toggle="dropdown">Teaching Centres</a>
-                                <div class="dropdown-menu">
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Blog</h5><a class="dropdown-item"
-                                            href="blog-grid-rs.html">Grid Right Sidebar</a><a class="dropdown-item"
-                                            href="blog-grid-ls.html">Grid Left Sidebar</a><a class="dropdown-item"
-                                            href="blog-grid-ns.html">Grid No Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-rs.html">List Right Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-ls.html">List Left Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-ns.html">List No Sidebar</a><a class="dropdown-item"
-                                            href="blog-single-rs.html">Single Post Right Sidebar</a><a
-                                            class="dropdown-item" href="blog-single-ls.html">Single Post Left
-                                            Sidebar</a><a class="dropdown-item" href="blog-single-ns.html">Single Post
-                                            No Sidebar</a>
+                                    data-bs-toggle="dropdown">How to Apply</a>
+                                <div class="dropdown-menu py-4 dropdown-logo-icon">
+                                    <div class="col-md-3 mb-2 mb-lg-0 position-relative menu-border">
+                                        <a class="dropdown-item mb-4 text-secondary fw-bold" href="#">General
+                                            Information <i class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-3" href="fees.html">Fees</a>
+                                        <a class="dropdown-item mb-3" href="scholarships.html">Scholorships</a>
+                                        <a class="dropdown-item mb-3" href="entry-requirements.html">Entry Requirements</a>
+                                        <a class="dropdown-item mb-3" href="english-placement-test.html">Placement Test</a>
                                     </div>
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Portfolio</h5><a class="dropdown-item"
-                                            href="portfolio-style-1.html">Grid Style 1</a><a class="dropdown-item"
-                                            href="portfolio-style-2.html">Grid Style 2</a><a class="dropdown-item"
-                                            href="portfolio-style-3.html">Grid Style 3</a><a class="dropdown-item"
-                                            href="portfolio-single-side-gallery-grid.html">Project Side Gallery
-                                            (Grid)</a><a class="dropdown-item"
-                                            href="portfolio-single-side-gallery-list.html">Project Side Gallery
-                                            (List)</a><a class="dropdown-item"
-                                            href="portfolio-single-carousel.html">Project Carousel</a><a
-                                            class="dropdown-item" href="portfolio-single-wide-gallery.html">Project Wide
-                                            Gallery</a>
+                                    <div class="col-md-4 mb-2 mb-lg-0 position-relative menu-border">
+                                        <a class="dropdown-item mb-4 text-secondary fw-bold" href="#">Where do you want
+                                            to study? <i class="bi bi-arrow-right"></i></a>
+                                        <div class="dropend d-table">
+                                            <a class="dropdown-item mb-3 dropdown-toggle" href="#"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">London</a>
+                                            <div class="dropdown-menu mx-1">
+                                                <a class="dropdown-item" href="student-visa.html">Visa</a>
+                                                <a class="dropdown-item" href="accommodation-in-london.html">Accommodation</a>
+                                                <a class="dropdown-item" href="what-to-bring.html">What to Bring</a>
+                                                <a class="dropdown-item" href="pre-arrival.html">Pre-Arrival Documents</a>
+                                                <a class="dropdown-item" href="other-costs.html">Other Cost</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropend d-table">
+                                            <a class="dropdown-item mb-3 dropdown-toggle" href="#"
+                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">UAE</a>
+                                            <div class="dropdown-menu mx-1">
+                                                <a class="dropdown-item" href="#">Visa</a>
+                                                <a class="dropdown-item" href="accommodation-in-abu-dhabi.html">Accommodation</a>
+                                                <a class="dropdown-item" href="#">What to Bring</a>
+                                                <a class="dropdown-item" href="#">Pre-Arrival Documents</a>
+                                                <a class="dropdown-item" href="other-costs.html">Other Cost</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Shop</h5><a class="dropdown-item"
-                                            href="shop-ls.html">Grid Left Sidebar</a><a class="dropdown-item"
-                                            href="shop-rs.html">Grid Right Sidebar</a><a class="dropdown-item"
-                                            href="shop-ns.html">Grid No Sidebar</a><a class="dropdown-item"
-                                            href="shop-single.html">Single Product</a><a class="dropdown-item"
-                                            href="checkout.html">Cart &amp; Checkout</a><a class="dropdown-item"
-                                            href="order-tracking.html">Order Tracking</a>
+                                    <div class="col-md-5 mb-2 mb-lg-0">
+                                        <a class="dropdown-item mb-4 text-secondary fw-bold" href="application-process.html">Application
+                                            Proccess <i class="bi bi-arrow-right"></i></a>
+                                        <a href="application-process.html" class="d-none d-xl-block">
+                                            <img src="assets/img/banner/breadcrumb-bg-application-process.png"
+                                                class="img-fluid" alt="Application Process" title="Application Process"
+                                                width="250" height="272" loading="lazy">
+                                        </a>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Pathways to University</a></li>
-                        </ul>
-                        <a class="navbar-brand flex-shrink-0 order-lg-2 mx-auto pe-lg-2 me-lg-4 d-none d-lg-block"
-                            href="index.html">
-                            <img class="img-fluid" src="assets/img/logo/ifg-logo.png" alt="logo" title="logo"
-                                width="280" height="" loading="lazy">
-                        </a>
-                        <ul class="navbar-nav d-block d-lg-none">
-                            <li class="nav-item dropdown dropdown-mega active"><a class="nav-link dropdown-toggle"
-                                    href="#" data-bs-toggle="dropdown">How to Apply</a>
-                                <div class="dropdown-menu"><a class="dropdown-column dropdown-column-img bg-secondary"
-                                        href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a>
-                                    <div class="dropdown-column"><a class="dropdown-item" href="index.html">Web Template
-                                            Presentation</a><a class="dropdown-item"
-                                            href="demo-business-consulting.html">Business Consulting</a><a
-                                            class="dropdown-item" href="demo-shop-homepage.html">Shop Homepage</a><a
-                                            class="dropdown-item" href="demo-booking-directory.html">Booking /
-                                            Directory</a><a class="dropdown-item"
-                                            href="demo-creative-agency.html">Creative Agency</a><a class="dropdown-item"
-                                            href="demo-web-studio.html">Web Studio</a><a class="dropdown-item"
-                                            href="demo-product-software.html">Product Landing - Software</a></div>
-                                    <div class="dropdown-column"><a class="dropdown-item"
-                                            href="demo-product-gadget.html">Product Landing - Gadget</a><a
-                                            class="dropdown-item" href="demo-mobile-app.html">Mobile App Showcase</a><a
-                                            class="dropdown-item" href="demo-coworking-space.html">Coworking Space</a><a
-                                            class="dropdown-item" href="demo-event-landing.html">Event Landing</a><a
-                                            class="dropdown-item" href="demo-marketing-seo.html">Digital Marketing &amp;
-                                            SEO</a><a class="dropdown-item" href="demo-food-blog.html">Food Blog</a><a
-                                            class="dropdown-item" href="demo-personal-portfolio.html">Personal
-                                            Portfolio</a></div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#"
-                                    data-bs-toggle="dropdown">Student Support</a>
-                                <div class="dropdown-menu">
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Blog</h5><a class="dropdown-item"
-                                            href="blog-grid-rs.html">Grid Right Sidebar</a><a class="dropdown-item"
-                                            href="blog-grid-ls.html">Grid Left Sidebar</a><a class="dropdown-item"
-                                            href="blog-grid-ns.html">Grid No Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-rs.html">List Right Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-ls.html">List Left Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-ns.html">List No Sidebar</a><a class="dropdown-item"
-                                            href="blog-single-rs.html">Single Post Right Sidebar</a><a
-                                            class="dropdown-item" href="blog-single-ls.html">Single Post Left
-                                            Sidebar</a><a class="dropdown-item" href="blog-single-ns.html">Single Post
-                                            No Sidebar</a>
-                                    </div>
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Portfolio</h5><a class="dropdown-item"
-                                            href="portfolio-style-1.html">Grid Style 1</a><a class="dropdown-item"
-                                            href="portfolio-style-2.html">Grid Style 2</a><a class="dropdown-item"
-                                            href="portfolio-style-3.html">Grid Style 3</a><a class="dropdown-item"
-                                            href="portfolio-single-side-gallery-grid.html">Project Side Gallery
-                                            (Grid)</a><a class="dropdown-item"
-                                            href="portfolio-single-side-gallery-list.html">Project Side Gallery
-                                            (List)</a><a class="dropdown-item"
-                                            href="portfolio-single-carousel.html">Project Carousel</a><a
-                                            class="dropdown-item" href="portfolio-single-wide-gallery.html">Project Wide
-                                            Gallery</a>
-                                    </div>
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Shop</h5><a class="dropdown-item"
-                                            href="shop-ls.html">Grid Left Sidebar</a><a class="dropdown-item"
-                                            href="shop-rs.html">Grid Right Sidebar</a><a class="dropdown-item"
-                                            href="shop-ns.html">Grid No Sidebar</a><a class="dropdown-item"
-                                            href="shop-single.html">Single Product</a><a class="dropdown-item"
-                                            href="checkout.html">Cart &amp; Checkout</a><a class="dropdown-item"
-                                            href="order-tracking.html">Order Tracking</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
-                                    data-bs-toggle="dropdown">About</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
-                                            data-bs-toggle="dropdown">Dashboard</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="dashboard-orders.html">Orders</a></li>
-                                            <li><a class="dropdown-item" href="dashboard-sales.html">Sales</a></li>
-                                            <li><a class="dropdown-item" href="dashboard-messages.html">Messages</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="dashboard-followers.html">Followers</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="dashboard-reviews.html">Reviews</a></li>
-                                            <li><a class="dropdown-item" href="dashboard-favorites.html">Favorites</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
-                                            data-bs-toggle="dropdown">Account Settings</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="account-profile.html">Profile Info</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a>
-                                            </li>
-                                            <li><a class="dropdown-item"
-                                                    href="account-notifications.html">Notifications</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href="signin-illustration.html">Sign In -
-                                            Illustration</a></li>
-                                    <li><a class="dropdown-item" href="signin-image.html">Sign In - Image</a></li>
-                                    <li><a class="dropdown-item" href="signin-signup.html">Sign In - Sign Up</a></li>
-                                    <li><a class="dropdown-item" href="password-recovery.html">Password Recovery</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Agent Resources</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <a class="navbar-brand flex-shrink-0 order-1 order-lg-2 mx-lg-auto pe-lg-2 me-lg-4 d-block d-lg-none"
-                    href="index.html">
-                    <img class="img-fluid" src="assets/img/logo/ifg-logo.png" alt="logo" title="logo" width="280"
-                        height="" loading="lazy">
-                </a>
-                <div class="offcanvas offcanvas-collapse order-lg-3 d-none d-lg-block" id="primaryMenu">
-                    <div class="offcanvas-header navbar-shadow">
-                        <h5 class="mt-1 mb-0">Menu</h5>
-                        <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <!-- Menu-->
-                        <ul class="navbar-nav ">
-                            <li class="nav-item dropdown dropdown-mega active"><a class="nav-link dropdown-toggle"
-                                    href="#" data-bs-toggle="dropdown">How to Apply</a>
-                                <div class="dropdown-menu"><a class="dropdown-column dropdown-column-img bg-secondary"
-                                        href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a>
-                                    <div class="dropdown-column"><a class="dropdown-item" href="index.html">Web Template
-                                            Presentation</a><a class="dropdown-item"
-                                            href="demo-business-consulting.html">Business Consulting</a><a
-                                            class="dropdown-item" href="demo-shop-homepage.html">Shop Homepage</a><a
-                                            class="dropdown-item" href="demo-booking-directory.html">Booking /
-                                            Directory</a><a class="dropdown-item"
-                                            href="demo-creative-agency.html">Creative Agency</a><a class="dropdown-item"
-                                            href="demo-web-studio.html">Web Studio</a><a class="dropdown-item"
-                                            href="demo-product-software.html">Product Landing - Software</a></div>
-                                    <div class="dropdown-column"><a class="dropdown-item"
-                                            href="demo-product-gadget.html">Product Landing - Gadget</a><a
-                                            class="dropdown-item" href="demo-mobile-app.html">Mobile App Showcase</a><a
-                                            class="dropdown-item" href="demo-coworking-space.html">Coworking Space</a><a
-                                            class="dropdown-item" href="demo-event-landing.html">Event Landing</a><a
-                                            class="dropdown-item" href="demo-marketing-seo.html">Digital Marketing &amp;
-                                            SEO</a><a class="dropdown-item" href="demo-food-blog.html">Food Blog</a><a
-                                            class="dropdown-item" href="demo-personal-portfolio.html">Personal
-                                            Portfolio</a></div>
                                 </div>
                             </li>
                             <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#"
                                     data-bs-toggle="dropdown">Student Support</a>
-                                <div class="dropdown-menu">
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Blog</h5><a class="dropdown-item"
-                                            href="blog-grid-rs.html">Grid Right Sidebar</a><a class="dropdown-item"
-                                            href="blog-grid-ls.html">Grid Left Sidebar</a><a class="dropdown-item"
-                                            href="blog-grid-ns.html">Grid No Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-rs.html">List Right Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-ls.html">List Left Sidebar</a><a class="dropdown-item"
-                                            href="blog-list-ns.html">List No Sidebar</a><a class="dropdown-item"
-                                            href="blog-single-rs.html">Single Post Right Sidebar</a><a
-                                            class="dropdown-item" href="blog-single-ls.html">Single Post Left
-                                            Sidebar</a><a class="dropdown-item" href="blog-single-ns.html">Single Post
-                                            No Sidebar</a>
+                                <div
+                                    class="dropdown-menu py-0 py-xl-5 dropdown-logo-icon align-items-center student-support-border">
+                                    <div class="col-md-3 mb-2 mb-lg-0 position-relative menu-border py-2 py-xl-4">
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="life-in-the-uk.html">Life in the UK <i
+                                                class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="#">Life in the UAE <i
+                                                class="bi bi-arrow-right"></i></a>
                                     </div>
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Portfolio</h5><a class="dropdown-item"
-                                            href="portfolio-style-1.html">Grid Style 1</a><a class="dropdown-item"
-                                            href="portfolio-style-2.html">Grid Style 2</a><a class="dropdown-item"
-                                            href="portfolio-style-3.html">Grid Style 3</a><a class="dropdown-item"
-                                            href="portfolio-single-side-gallery-grid.html">Project Side Gallery
-                                            (Grid)</a><a class="dropdown-item"
-                                            href="portfolio-single-side-gallery-list.html">Project Side Gallery
-                                            (List)</a><a class="dropdown-item"
-                                            href="portfolio-single-carousel.html">Project Carousel</a><a
-                                            class="dropdown-item" href="portfolio-single-wide-gallery.html">Project Wide
-                                            Gallery</a>
+                                    <div class="col-md-3 mb-2 mb-lg-0 position-relative menu-border py-2 py-xl-4">
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-3 text-wrap" href="#">University
+                                            Application &
+                                            Progression Support <i class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="testimonials.html">What our students say <i
+                                                class="bi bi-arrow-right"></i></a>
+
                                     </div>
-                                    <div class="dropdown-column mb-2 mb-lg-0">
-                                        <h5 class="dropdown-header">Shop</h5><a class="dropdown-item"
-                                            href="shop-ls.html">Grid Left Sidebar</a><a class="dropdown-item"
-                                            href="shop-rs.html">Grid Right Sidebar</a><a class="dropdown-item"
-                                            href="shop-ns.html">Grid No Sidebar</a><a class="dropdown-item"
-                                            href="shop-single.html">Single Product</a><a class="dropdown-item"
-                                            href="checkout.html">Cart &amp; Checkout</a><a class="dropdown-item"
-                                            href="order-tracking.html">Order Tracking</a>
+                                    <div class="col-md-2 mb-2 mb-lg-0 py-2 py-xl-4">
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="#">Pharos <i
+                                                class="bi bi-arrow-right"></i></a>
+                                        <a class="dropdown-item mb-2 mb-xl-4 py-4" href="faqs.html">FAQs <i
+                                                class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                    <div class="col-md-2 mb-2 mb-lg-0">
+                                        <a href="student-handbook.html" class="d-none d-xl-block">
+                                            <div class="position-relative">
+                                                <img src="assets/img/feature/student-support.png" class="img-fluid"
+                                                    alt="Student Support" title="Student Support" width="191"
+                                                    height="271" loading="lazy">
+                                                <div class="student-handbook">
+                                                    <p class="text-white mb-0">Student Handbook<i
+                                                            class="bi bi-arrow-up-right-circle ms-2"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item mb-3 d-block d-xl-none" href="student-handbook.html">Student Handbook</a>
+                                    </div>
+                                    <div class="col-md-2 mb-2 mb-lg-0 ms-3">
+                                        <a href="togetherall.html" class="d-none d-xl-block">
+                                            <div class="bg-grey p-3 position-relative">
+                                                <img src="assets/img/banner/breadcrumb-bg-togetherall.png"
+                                                    class="img-fluid" alt="Togetherall" title="Togetherall" width="373"
+                                                    height="144" loading="lazy">
+                                                <div class="togetherall">
+                                                    <p class="text-white mb-0">Togetherall<i
+                                                            class="bi bi-arrow-up-right-circle ms-2"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item mb-3 d-block d-xl-none"
+                                            href="togetherall.html">Togetherall</a>
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
-                                    data-bs-toggle="dropdown">About</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
-                                            data-bs-toggle="dropdown">Dashboard</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="dashboard-orders.html">Orders</a></li>
-                                            <li><a class="dropdown-item" href="dashboard-sales.html">Sales</a></li>
-                                            <li><a class="dropdown-item" href="dashboard-messages.html">Messages</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="dashboard-followers.html">Followers</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="dashboard-reviews.html">Reviews</a></li>
-                                            <li><a class="dropdown-item" href="dashboard-favorites.html">Favorites</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
-                                            data-bs-toggle="dropdown">Account Settings</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="account-profile.html">Profile Info</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a>
-                                            </li>
-                                            <li><a class="dropdown-item"
-                                                    href="account-notifications.html">Notifications</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href="signin-illustration.html">Sign In -
-                                            Illustration</a></li>
-                                    <li><a class="dropdown-item" href="signin-image.html">Sign In - Image</a></li>
-                                    <li><a class="dropdown-item" href="signin-signup.html">Sign In - Sign Up</a></li>
-                                    <li><a class="dropdown-item" href="password-recovery.html">Password Recovery</a>
-                                    </li>
-                                </ul>
+                            <li class="nav-item dropdown dropdown-mega about-menu">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+                                <div class="dropdown-menu py-4 dropdown-logo-icon">
+                                    <div class="col-md-6 mb-2 mb-lg-0 position-relative menu-border">
+                                        <a class="dropdown-item mb-3" href="about-us.html">About IFG</a>
+                                        <a class="dropdown-item mb-3" href="ifg-team.html">IFG Team</a>
+                                        <a class="dropdown-item mb-3" href="ifg-history.html">IFG History</a>
+                                        <a class="dropdown-item mb-3" href="csr.html">CSR</a>
+                                    </div>
+                                    <div class="col-md-6 mb-2 mb-lg-0">
+                                        <a class="dropdown-item mb-3" href="accreditation.html">Accreditation</a>
+                                        <a class="dropdown-item mb-3" href="latest-news.html">Latest News</a>
+                                        <a class="dropdown-item mb-3" href="career-opportunities.html">Career Opportunities</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Agent Resources</a></li>
+                            <li class="nav-item"><a class="nav-link pe-0" href="agent-resources.html">Agent Resources</a></li>
+                            <li class="nav-item d-block d-md-none"><a class="nav-link pe-0" href="accommodation.html">Accommodation</a>
+                            </li>
+                            <li class="nav-item d-block d-md-none"><a class="nav-link pe-0" href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -410,7 +348,7 @@
         </div>
     </section>
 
-    <section class="container py-0 py-md-6">
+    <section class="container py-4 py-md-6">
         <h2 class="text-gradient-green-blue text-product-sans fs-1">Get Support. Take Control.
             Feel Better</h2>
         <ul class="mt-4">
@@ -441,23 +379,50 @@
         </ul>
 
         <div class="row">
-            <div class="col-md-4">
-                <div class="mb-4">
-                    <img src="assets/img/feature/ifg-togetherall-1.png" class="img-fluid" alt="Togetherall"
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-4 position-relative" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                    <img src="assets/img/feature/ifg-togetherall-1.webp" class="img-fluid" alt="Togetherall"
                         title="Togetherall" width="528" height="316" loading="lazy">
+                    <div>
+                        <div class="togetherall-content togetherall-detail">
+                            <p class="text-center text-white mb-2">Lorem ipsum dolor</p>
+                            <img src="assets/img/feature/togetherall-vector.png" class="img-fluid" alt="Togetherall"
+                                title="Togetherall" width="113" height="10" loading="lazy">
+                        </div>
+                        <div class="ifg-play-button top-50 start-50 translate-middle">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="mb-4">
-                    <img src="assets/img/feature/ifg-togetherall-2.png" class="img-fluid" alt="Togetherall"
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-4 position-relative">
+                    <img src="assets/img/feature/ifg-togetherall-2.webp" class="img-fluid" alt="Togetherall"
                         title="Togetherall" width="528" height="316" loading="lazy">
+                    <div>
+                        <div class="togetherall-content togetherall-detail">
+                            <p class="text-center text-white mb-2">Lorem ipsum dolor</p>
+                            <img src="assets/img/feature/togetherall-vector.png" class="img-fluid" alt="Togetherall"
+                                title="Togetherall" width="113" height="10" loading="lazy">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="mb-4">
-                    <img src="assets/img/feature/ifg-togetherall-3.png" class="img-fluid" alt="Togetherall"
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-4 position-relative" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                    <img src="assets/img/feature/ifg-togetherall-3.webp" class="img-fluid" alt="Togetherall"
                         title="Togetherall" width="528" height="316" loading="lazy">
+                    <div>
+                        <div class="togetherall-content togetherall-detail">
+                            <p class="text-center text-white mb-2">Lorem ipsum dolor</p>
+                            <img src="assets/img/feature/togetherall-vector.png" class="img-fluid" alt="Togetherall"
+                                title="Togetherall" width="113" height="10" loading="lazy">
+                        </div>
+                        <div class="ifg-play-button top-50 start-50 translate-middle">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -762,6 +727,21 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="ifg-message" tabindex="-1" role="dialog" aria-modal="false">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content dropdown-logo-icon zindex-1">
+                <div class="modal-header">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls class='video w-100'>
+                        <source src="assets/img/Ifg-hero-video.m4v" type="video/mp4" class="" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to top button-->
     <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>

@@ -11571,7 +11571,7 @@ textarea.form-control.is-invalid {
 	background-color: transparent;
 	border: 2px solid transparent;
 	padding: .5625rem 1.25rem;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	border-radius: 8px;
 	transition: color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out
 }

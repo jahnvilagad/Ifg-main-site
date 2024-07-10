@@ -138,10 +138,6 @@ $(document).ready(function () {
     loop: true,
     dots: true,
     arrows: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

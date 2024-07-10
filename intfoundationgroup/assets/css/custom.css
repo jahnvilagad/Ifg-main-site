@@ -18,6 +18,16 @@
   src: url("../fonts/ReenieBeanie-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "RumRaisin";
+  src: url("../fonts/RumRaisin-Regular.ttf") format("truetype");
+}
+
+.togetherall-content p {
+  font-family: "RumRaisin", sans-serif;
+  font-size: 1.5rem;
+}
+
 .text-reenie-beanie {
   font-family: "ReenieBeanie-Regular", sans-serif;
   font-size: 30px;
@@ -153,6 +163,7 @@ body::-webkit-scrollbar-thumb {
 .ifg-center-bg p {
   background-color: #EEF1F5;
   margin-bottom: 1rem;
+  padding: 4px 0;
 }
 
 .social-icon {
@@ -678,33 +689,16 @@ ul.list-type-none li::after {
   z-index: 999;
 }
 
-.teaching-partner {
-  position: absolute;
-  left: -42px;
-  top: 110px;
-}
-
-.why-choose-teaching.bg-yellow {
-  border-radius: 50%;
-  width: 328px;
-  height: 328px;
+.why-choose-teaching {
   position: absolute;
   right: 6rem;
-  top: 6rem;
-  border: 7px solid #fff;
+  top: 12rem;
+  font-size: 30px;
+  color: rgba(57, 57, 57, 1);
+  font-weight: 700;
   text-align: center;
 }
 
-.why-choose-teaching.bg-yellow p {
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgba(57, 57, 57, 1);
-  font-weight: 700;
-  width: 63%;
-}
 
 
 .text-gradient {
@@ -815,7 +809,35 @@ ul.list-type-none li::after {
   border: 3px solid #fff;
   line-height: 40px;
   cursor: pointer;
+ 
 }
+/* 
+.teaching-centre-arrow:hover .teaching-arrrow{
+  -webkit-animation: bounce .4s ease;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+} */
 
 .teaching-arrrow i {
   transform: rotate(-45deg);
@@ -1226,6 +1248,7 @@ ul.list-type-none li::after {
 
 .fees table .accordion-button {
   display: table-cell;
+  cursor: pointer;
 }
 
 .fees table .accordion-button::after {
@@ -2231,7 +2254,7 @@ span.round-tab {
 
 .arrow-vector {
   position: absolute;
-  right: 5rem;
+  right: 13rem;
   bottom: -5rem;
   animation: zoominoutsinglefeatured 4s infinite;
 }
@@ -2357,7 +2380,7 @@ div.owl-carousel .owl-nav .owl-next {
   border-radius: 6px;
   margin-right: -23px;
   bottom: 3.8rem;
-  right: -1rem;
+  right: -2rem;
 }
 
 .students-ifg-play-button .ifg-play-button {
@@ -2368,11 +2391,12 @@ div.owl-carousel .owl-nav .owl-next {
 .students-img:hover .students-play-button {
   opacity: 1;
 }
-.students-img::after{
+
+.students-img::after {
   width: 84%;
 }
 
-.undergraduate-subject .nav-tabs .nav-item{
+.undergraduate-subject .nav-tabs .nav-item {
   width: auto;
 }
 
@@ -2513,14 +2537,31 @@ header .navbar .offcanvas-header .btn-close {
   padding: 7px 10px;
 }
 
+.testimonial-content-scroll {
+  height: 120px;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+.togetherall-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+}
+
+.togetherall-detail p {
+  font-size: 1.2rem;
+}
+
 
 @media (max-width:1440px) {
   .book-icon::after {
-    right: -1rem;
+    right: 0rem;
   }
 
   .degree-icon::before {
-    left: -1rem;
+    left: 0rem;
   }
 
   .university-partners-click {
@@ -2612,6 +2653,19 @@ header .navbar .offcanvas-header .btn-close {
 }
 
 @media (max-width:1024px) {
+  .why-choose-teaching {
+    right: 3rem;
+    top: 10rem;
+  }
+
+  .togetherall-content {
+    left: 1rem;
+  }
+
+  .togetherall-content p {
+    font-size: 1rem;
+  }
+
   .arrow-vector {
     bottom: -3rem;
   }
@@ -2680,9 +2734,26 @@ header .navbar .offcanvas-header .btn-close {
   .include-border::after {
     border: unset;
   }
+
+  .career-opportuniti {
+    position: unset;
+    transform: unset;
+    width: auto;
+    padding: 2rem;
+  }
 }
 
 @media (max-width:991px) {
+  .text-gradient {
+    font-size: 2.5rem;
+  }
+
+  .why-choose-teaching {
+    right: 2rem;
+    top: 8rem;
+    font-size: 18px;
+  }
+
   .about-img-1 {
     margin-top: 2rem;
   }
@@ -2769,12 +2840,7 @@ header .navbar .offcanvas-header .btn-close {
     right: 3rem;
   }
 
-  .career-opportuniti {
-    position: unset;
-    transform: unset;
-    width: auto;
-    padding: 2rem;
-  }
+
 
   .column-4 ul {
     columns: 3;
@@ -2801,20 +2867,55 @@ header .navbar .offcanvas-header .btn-close {
     margin-left: 10px;
   }
 
-  .ifg-history .meta-date{
+  .ifg-history .meta-date {
     margin-left: 30px;
   }
 
   .timeline-article {
     margin: 0;
   }
+
+  .uk-students img {
+    width: 100%;
+  }
+
+  .testimonial-content-scroll {
+    height: 200px;
+  }
+
+  .our-partner-arrow {
+    right: -6rem !important;
+    bottom: 0rem !important;
+  }
 }
 
 @media (max-width:767px) {
+  .why-choose-teaching {
+    right: 3rem;
+    top: 9rem;
+  }
+
+  .testimonial-content-scroll {
+    height: 95px;
+  }
+
+  .faqs .nav-pills .nav-link.active::after {
+    bottom: 0;
+    top: auto;
+    height: 2px;
+    width: 100%;
+  }
+
+  .faqs .nav-pills .nav-link {
+    font-size: 16px;
+    padding: 10px 8px;
+  }
+
   #become-a-partner-center .btn {
     width: 100%;
     margin-bottom: 6px;
   }
+
   span.round-tab {
     width: 30px;
     height: 30px;
@@ -2855,7 +2956,7 @@ header .navbar .offcanvas-header .btn-close {
     width: 100%;
   }
 
- 
+
   .students-ifg-play-button .ifg-play-button {
     right: 3rem;
   }
@@ -2922,6 +3023,7 @@ header .navbar .offcanvas-header .btn-close {
   .timeline-article .meta-date {
     margin-left: 10px;
   }
+
   .ifg-history .meta-date {
     margin-left: 30px;
   }
