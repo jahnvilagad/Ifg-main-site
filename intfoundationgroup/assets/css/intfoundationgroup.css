@@ -12941,7 +12941,8 @@ fieldset:disabled .btn {
 	flex-direction: column;
 	padding-left: 0;
 	margin-bottom: 0;
-	list-style: none
+	list-style: none;
+	align-items: center;
 }
 
 .navbar-nav .nav-link {
@@ -26596,7 +26597,7 @@ input[type=search]::-webkit-search-results-decoration {
 @media(min-width: 992px) {
 	.navbar-expand-lg.navbar {
 		padding-top: .75rem;
-		padding-bottom: .75rem
+		/* padding-bottom: .75rem */
 	}
 
 

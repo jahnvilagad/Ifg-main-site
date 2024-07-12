@@ -210,6 +210,7 @@ ul.list-type-none li::after {
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
   border-top: 50px solid #48AED9;
+  bottom: -26px;
 }
 
 .about-img {
@@ -534,6 +535,7 @@ ul.list-type-none li::after {
 .ifg-bg-gradient {
   background: linear-gradient(135.47deg, rgba(255, 255, 255, 0) -0.16%, rgba(72, 174, 217, 0.35) 78.98%);
   z-index: 1;
+  min-height: 394px;
 }
 
 /* .breadcrumb-bg {
@@ -549,8 +551,22 @@ ul.list-type-none li::after {
   top: 50%;
   transform: translateY(-50%);
   border-left: 8px solid rgba(72, 174, 217, 1);
-  width: 45%;
+  width: 50%;
   height: 235px;
+}
+
+.w-36 {
+  width: 34%;
+}
+
+.breadcrumb-img img {
+  margin-top: -48px;
+}
+
+.breadcrumb-course .breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: .5rem;
+  color: #fff;
 }
 
 .breadcrumb-bg-layer {
@@ -809,8 +825,9 @@ ul.list-type-none li::after {
   border: 3px solid #fff;
   line-height: 40px;
   cursor: pointer;
- 
+
 }
+
 /* 
 .teaching-centre-arrow:hover .teaching-arrrow{
   -webkit-animation: bounce .4s ease;
@@ -937,6 +954,18 @@ ul.list-type-none li::after {
   top: 17px;
   z-index: -1;
   transform: skew(-8deg);
+}
+
+.include-border-1::after {
+  content: '';
+  border: 2px solid rgba(72, 174, 217, 1);
+  width: 448px;
+  height: 239px;
+  position: absolute;
+  right: 5px;
+  top: 17px;
+  z-index: -1;
+  transform: skew(-9deg);
 }
 
 .partner-benefit ul {
@@ -1279,7 +1308,7 @@ ul.list-type-none li::after {
   margin: 0 auto;
 }
 
-.english-placement-test {
+.english-placement-test-border {
   border: 2px solid rgba(220, 226, 235, 1);
   background: rgba(197, 214, 237, 0.31);
 }
@@ -2043,7 +2072,7 @@ ul.navbar-nav li::after,
 
 .become-a-agent {
   position: absolute;
-  left: 8rem;
+  left: 5.5rem;
   transform: translateY(-50%);
   top: 50%;
   z-index: -1;
@@ -2501,8 +2530,11 @@ div.owl-carousel .owl-nav .owl-next {
   background: rgba(236, 246, 250, 1);
 }
 
-.carousel .carousel-item h1 {
+.carousel .carousel-item .text-heading {
   font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: .75rem;
 }
 
 header .navbar .offcanvas-header .btn-close {
@@ -2553,6 +2585,30 @@ header .navbar .offcanvas-header .btn-close {
 .togetherall-detail p {
   font-size: 1.2rem;
 }
+
+.ifg-partner-teaching-center .carousel-inner {
+  overflow: unset;
+}
+
+.ifg-partner-teaching-center .carousel-caption {
+  top: -23%;
+  z-index: 9999;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.ifg-partner-teaching-center .carousel-caption h2 {
+  font-size: 50px;
+}
+html {
+  scroll-behavior: smooth;
+ }
+
+
+
+
 
 
 @media (max-width:1440px) {
@@ -2653,6 +2709,20 @@ header .navbar .offcanvas-header .btn-close {
 }
 
 @media (max-width:1024px) {
+
+  .ifg-partner-teaching-center .carousel-caption h2 {
+    font-size: 38px;
+  }
+
+  .ifg-partner-teaching-center .carousel-caption {
+    top: -28%;
+  }
+
+  .include-border-1::after {
+    width: 365px;
+    height: 190px;
+  }
+
   .why-choose-teaching {
     right: 3rem;
     top: 10rem;
@@ -2744,6 +2814,19 @@ header .navbar .offcanvas-header .btn-close {
 }
 
 @media (max-width:991px) {
+  .ifg-partner-teaching-center .carousel-caption h2 {
+    font-size: 26px;
+  }
+
+  .ifg-partner-teaching-center .carousel-caption {
+    top: -37%;
+  }
+
+  .include-border-1::after {
+    width: 267px;
+    height: 136px;
+  }
+
   .text-gradient {
     font-size: 2.5rem;
   }
@@ -2890,6 +2973,81 @@ header .navbar .offcanvas-header .btn-close {
 }
 
 @media (max-width:767px) {
+  .about-img {
+    margin: -60px 29px;
+  }
+
+  .about-img-1 {
+    margin-top: -6rem;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .ifg-partner-teaching-center .carousel-caption h2 {
+    font-size: 18px;
+  }
+
+  .ifg-partner-teaching-center .carousel-caption {
+    top: -69%;
+  }
+
+  .how-to-apply::after,
+  .about-us-breadcrumb::after,
+  .business-management::after,
+  .pathways-to-university::after,
+  .united-kindom::after,
+  .university-of-birmingham::after,
+  .ifg-team::after,
+  .fees::after,
+  .entry-requirements::after,
+  .accreditation::after,
+  .student-visa::after,
+  .pre-arrival::after,
+  .english-placement-test::after,
+  .life-in-the-uk::after,
+  .togetherall-text::after,
+  .student-handbook-text::after,
+  .latest-news-text::after,
+  .accommodation::after,
+  .faqs-text::after,
+  .teaching-centres::after,
+  .study-in-london::after,
+  .testimonials::after,
+  .upcoming-events::after,
+  .agent-resources::after,
+  .become-partner-centre::after,
+  .foundation-programmes::after,
+  .policies::after,
+  .other-costs::after,
+  .what-to-bring::after,
+  .csr::after {
+    background-image: unset;
+    width: auto;
+    position: unset;
+    content: unset;
+  }
+
+  .ifg-bg-gradient {
+    min-height: 155px;
+  }
+
+  .breadcrumb-bg .position-absolute {
+    text-align: center;
+    position: unset !important;
+    width: auto;
+    transform: unset !important;
+  }
+
+  .breadcrumb {
+    justify-content: center;
+  }
+
+  .include-border-1::after {
+    border: unset;
+    position: unset;
+    content: unset;
+  }
+
   .why-choose-teaching {
     right: 3rem;
     top: 9rem;

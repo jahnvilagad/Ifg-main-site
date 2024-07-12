@@ -113,19 +113,19 @@ $(document).ready(function () {
     },
     effect: 'slide',
     breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-        },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+    },
   });
 
 });
@@ -211,53 +211,94 @@ $(document).ready(function () {
 
 //ifg advantage slider
 $(document).ready(function () {
-$('.testimonial-slider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  dots:true,
-  arrows:false,
-  infinite: true,
-  cssEase: 'linear',
-  speed:1000,
-  vertical:true,
-  autoplay:true,
-  autoplaySpeed:2000,
-  rows:1,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        vertical:false,
-        rows:1
+  $('.testimonial-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    cssEase: 'linear',
+    speed: 1000,
+    vertical: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    rows: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          vertical: false,
+          rows: 1
+        }
       }
-    }
-    
-  ]
-});
+
+    ]
+  });
 
 });
 
 
-$(document).ready(function(){
+$(document).ready(function () {
   $(".testimonial-slider button").empty();
 });
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Initialize LightGallery
   const lightGalleryElement = document.getElementById('lightgallery');
   lightGallery(lightGalleryElement, {
-      plugins: [lgThumbnail, lgZoom],
-      thumbnail: true,
-      animateThumb: false,
-      showThumbByDefault: false
+    plugins: [lgThumbnail, lgZoom],
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false
   });
 
   // Trigger LightGallery when the single image is clicked
-  document.getElementById('triggerImage').addEventListener('click', function() {
-      lightGalleryElement.querySelector('a').click();
+  document.getElementById('triggerImage').addEventListener('click', function () {
+    lightGalleryElement.querySelector('a').click();
   });
+});
+
+
+// $(document).ready(function () {
+//   $(".university-foundation-programme").click(function () {
+//     $('html,body').animate({
+//       scrollTop: $(".university-foundation-programme").offset().top
+//     },
+//       'slow');
+//   });
+// });
+
+// $(document).ready(function () {
+//   $(".pre-master-programme").click(function () {
+//     $('html,body').animate({
+//       scrollTop: $(".pre-master-programme").offset().top
+//     },
+//       'slow');
+//   });
+// });
+
+// $(document).ready(function () {
+//   $(".english-language-programme").click(function () {
+//     $('html,body').animate({
+//       scrollTop: $(".english-language-programme").offset().top
+//     },
+//       'slow');
+//   });
+// });
+
+// $(document).ready(function () {
+//   $(".other-programme").click(function () {
+//     $('html,body').animate({
+//       scrollTop: $(".other-programme").offset().top
+//     },
+//       'slow');
+//   });
+// });
+
+$(document).ready(function () {
+  $(window).scrollTop($target.offset().top - 100)
 });
