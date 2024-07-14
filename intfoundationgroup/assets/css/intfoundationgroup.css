@@ -25310,12 +25310,19 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .dropdown-item {
-	position: relative;
-	width: 100%;
-	transition: all .25s ease-in-out;
-	font-size: 1rem;
-	font-weight: 500;
-	white-space: nowrap;
+    position: relative;
+    width: auto;
+    transition: all .25s ease-in-out;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    display:table;
+}
+
+.dropdown-item:hover{
+	background-color: rgba(233, 236, 241, 1);
+	color: #174780;
+	border-radius: 50px;
 }
 
 .dropdown-item.active {

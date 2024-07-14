@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="assets/css/intfoundationgroup.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/slick-min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
 </head>
 
 <body>
@@ -443,7 +446,7 @@
         </div>
     </section>
 
-    <section class="container py-4">
+    <section class="container py-4 pb-6">
         <h2 class="text-dark">Which Foundation Programme do I need</h2>
 
         <div class="mb-3">
@@ -479,109 +482,89 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-4">
-                <div class="row">
-                    <div class="col-md-8 pe-md-0 order-last order-md-1">
-                        <div class="bg-grey h-100 position-relative triangle-shape p-4">
-                            <h3 class="text-secondary">University Foundation Programme in Engineering</h3>
-                            <p>Our Foundation Programme in Business Management is specifically designed for High School
-                                students ...</p>
-                            <a class="btn btn-primary" href="#">View Course</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ps-md-0 order-1 order-md-last">
-                        <img src="assets/img/feature/university-foundation-programmes-2.webp"
-                            class="img-fluid w-100 h-100" alt="University Foundation Programmes"
-                            title="University Foundation Programmes" width="225" height="289" loading="lazy">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4">
-                <div class="row">
-                    <div class="col-md-8 pe-md-0 order-last order-md-1">
-                        <div class="bg-grey h-100 position-relative triangle-shape p-4">
-                            <h3 class="text-secondary">University Foundation Programme in Social Sciences</h3>
-                            <p>Our Foundation Programme in Business Management is specifically designed for High School
-                                students ...</p>
-                            <a class="btn btn-primary" href="#">View Course</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ps-md-0 order-1 order-md-last">
-                        <img src="assets/img/feature/university-foundation-programmes-3.webp"
-                            class="img-fluid w-100 h-100" alt="University Foundation Programmes"
-                            title="University Foundation Programmes" width="225" height="289" loading="lazy">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4">
-                <div class="row">
-                    <div class="col-md-8 pe-md-0 order-last order-md-1">
-                        <div class="bg-grey h-100 position-relative triangle-shape p-4">
-                            <h3 class="text-secondary">University Foundation Programme in Computer Science</h3>
-                            <p>Our Foundation Programme in Business Management is specifically designed for High School
-                                students ...</p>
-                            <a class="btn btn-primary" href="#">View Course</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ps-md-0 order-1 order-md-last">
-                        <img src="assets/img/feature/university-foundation-programmes-4.webp"
-                            class="img-fluid w-100 h-100" alt="University Foundation Programmes"
-                            title="University Foundation Programmes" width="225" height="289" loading="lazy">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4">
-                <div class="row">
-                    <div class="col-md-8 pe-md-0 order-last order-md-1">
-                        <div class="bg-grey h-100 position-relative triangle-shape p-4">
-                            <h3 class="text-secondary">Medical Foundation Programme</h3>
-                            <p>Our Foundation Programme in Business Management is specifically designed for High School
-                                students ...</p>
-                            <a class="btn btn-primary" href="#">View Course</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ps-md-0 order-1 order-md-last">
-                        <img src="assets/img/feature/university-foundation-programmes-5.webp"
-                            class="img-fluid w-100 h-100" alt="University Foundation Programmes"
-                            title="University Foundation Programmes" width="225" height="289" loading="lazy">
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <section class="bg-grey py-1 py-md-5 wave-shape position-relative my-7">
+    <section class="bg-grey py-1 py-lg-5 wave-shape position-relative my-7">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-12 col-lg-5">
                     <i class="bi bi-quote quote-icon"></i>
                     <h4 class="text-product-sans text-secondary fs-1">What our students
                         say about us</h4>
 
-                    <a href="#" class="btn btn-secondary mt-4">See All Testimonials <i
+                    <a href="testimonials.html" class="btn btn-secondary mt-4">See All Testimonials <i
                             class="bi bi-mortarboard"></i></a>
                 </div>
-                <div class="col-md-7 mt-4 mt-md-0">
+                <div class="col-md-12 col-lg-7 mt-6 mt-lg-0">
                     <div class="tns-carousel-wrapper">
                         <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, 
                                 &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},
                                 &quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18}, 
                                 &quot;1100&quot;:{&quot;gutter&quot;: 24}}}">
-                            <div class="bg-gradient position-relative">
-                                <img class="rounded img-fluid" src="assets/img/feature/ifg-students-1.webp"
-                                    alt="Student" title="Student" width="308" height="411" loading="lazy" />
+                            <div class="students-img bg-slider position-relative">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                    <img class="rounded img-fluid" src="assets/img/feature/ifg-students-1.webp"
+                                        alt="Student" title="Student" width="308" height="411" loading="lazy" />
+
+                                    <div
+                                        class="students-ifg-play-button d-flex align-items-center justify-content-center">
+                                        <div class="students-play-button">
+                                            <p class="mb-0">Play</p>
+                                        </div>
+                                        <div class="ifg-play-button zindex-1">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div>
-                                <img class="rounded img-fluid" src="assets/img/feature/ifg-students-2.webp"
-                                    alt="Student" title="Student" width="308" height="411" loading="lazy">
+                            <div class="students-img bg-slider position-relative">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                    <img class="rounded img-fluid" src="assets/img/feature/ifg-students-2.webp"
+                                        alt="Student" title="Student" width="308" height="411" loading="lazy">
+
+                                    <div
+                                        class="students-ifg-play-button d-flex align-items-center justify-content-center">
+                                        <div class="students-play-button">
+                                            <p class="mb-0">Play</p>
+                                        </div>
+                                        <div class="ifg-play-button zindex-1">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div>
-                                <img class="rounded img-fluid" src="assets/img/feature/ifg-students-1.webp"
-                                    alt="Student" title="Student" width="308" height="411" loading="lazy">
+                            <div class="students-img bg-slider position-relative">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                    <img class="rounded img-fluid" src="assets/img/feature/ifg-students-1.webp"
+                                        alt="Student" title="Student" width="308" height="411" loading="lazy" />
+
+                                    <div
+                                        class="students-ifg-play-button d-flex align-items-center justify-content-center">
+                                        <div class="students-play-button">
+                                            <p class="mb-0">Play</p>
+                                        </div>
+                                        <div class="ifg-play-button zindex-1">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div>
-                                <img class="rounded img-fluid" src="assets/img/feature/ifg-students-2.webp"
-                                    alt="Student" title="Student" width="308" height="411" loading="lazy">
+                            <div class="students-img bg-slider position-relative">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#ifg-message">
+                                    <img class="rounded img-fluid" src="assets/img/feature/ifg-students-2.webp"
+                                        alt="Student" title="Student" width="308" height="411" loading="lazy">
+
+                                    <div
+                                        class="students-ifg-play-button d-flex align-items-center justify-content-center">
+                                        <div class="students-play-button">
+                                            <p class="mb-0">Play</p>
+                                        </div>
+                                        <div class="ifg-play-button zindex-1">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -895,10 +878,13 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/intfoundationgroup.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/slick-min.js"></script>
     <script src="assets/js/slick.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 </body>
 
 </html>

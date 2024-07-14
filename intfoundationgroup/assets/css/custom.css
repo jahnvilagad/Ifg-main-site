@@ -809,7 +809,7 @@ ul.list-type-none li::after {
 }
 
 .search-course-icon i {
-  font-size: 5rem;
+  font-size: 8rem;
 }
 
 .teaching-arrrow {
@@ -2703,7 +2703,7 @@ html {
 
 @media (min-width:1025px) {
   .navbar-expand-lg .dropdown-mega.about-menu>.dropdown-menu {
-    width: 39%;
+    width: 37%;
     left: 44rem;
   }
 }
