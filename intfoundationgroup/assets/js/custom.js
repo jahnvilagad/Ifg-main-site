@@ -227,9 +227,9 @@ $(document).ready(function () {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
+          dots: false,
           slidesToScroll: 1,
-          vertical: false,
           rows: 1
         }
       }
@@ -263,42 +263,47 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// $(document).ready(function () {
-//   $(".university-foundation-programme").click(function () {
-//     $('html,body').animate({
-//       scrollTop: $(".university-foundation-programme").offset().top
-//     },
-//       'slow');
-//   });
-// });
-
-// $(document).ready(function () {
-//   $(".pre-master-programme").click(function () {
-//     $('html,body').animate({
-//       scrollTop: $(".pre-master-programme").offset().top
-//     },
-//       'slow');
-//   });
-// });
-
-// $(document).ready(function () {
-//   $(".english-language-programme").click(function () {
-//     $('html,body').animate({
-//       scrollTop: $(".english-language-programme").offset().top
-//     },
-//       'slow');
-//   });
-// });
-
-// $(document).ready(function () {
-//   $(".other-programme").click(function () {
-//     $('html,body').animate({
-//       scrollTop: $(".other-programme").offset().top
-//     },
-//       'slow');
-//   });
-// });
-
 $(document).ready(function () {
   $(window).scrollTop($target.offset().top - 100)
+});
+
+if (('.page_hero-talents_items').length) {
+  var myVar = setInterval(() => {
+      let parent = document.querySelector('.page_hero-talents_items');
+      if (parent) {
+          let children = parent.children;
+          let changeItem = children[0];
+          parent.removeChild(changeItem);
+          parent.appendChild(changeItem);
+      }
+  }, 4000);
+}
+if (('.page_hero-talents_items2').length) {
+  var myVar = setInterval(() => {
+      let parent = document.querySelector('.page_hero-talents_items2');
+      if (parent) {
+          let children = parent.children;
+          let changeItem = children[0];
+          parent.removeChild(changeItem);
+          parent.appendChild(changeItem);
+      }
+  }, 4000);
+}
+
+
+var swiper = new Swiper('.swiper-container.two', {
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  effect: 'coverflow',
+  loop: true,
+  speed: 2000,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflow: {
+    rotate: 0,
+    stretch: 100,
+    depth: 150,
+    modifier: 1.5,
+    slideShadows: false,
+  }
 });
