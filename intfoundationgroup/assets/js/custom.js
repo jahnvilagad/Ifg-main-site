@@ -269,24 +269,24 @@ $(document).ready(function () {
 
 if (('.page_hero-talents_items').length) {
   var myVar = setInterval(() => {
-      let parent = document.querySelector('.page_hero-talents_items');
-      if (parent) {
-          let children = parent.children;
-          let changeItem = children[0];
-          parent.removeChild(changeItem);
-          parent.appendChild(changeItem);
-      }
+    let parent = document.querySelector('.page_hero-talents_items');
+    if (parent) {
+      let children = parent.children;
+      let changeItem = children[0];
+      parent.removeChild(changeItem);
+      parent.appendChild(changeItem);
+    }
   }, 4000);
 }
 if (('.page_hero-talents_items2').length) {
   var myVar = setInterval(() => {
-      let parent = document.querySelector('.page_hero-talents_items2');
-      if (parent) {
-          let children = parent.children;
-          let changeItem = children[0];
-          parent.removeChild(changeItem);
-          parent.appendChild(changeItem);
-      }
+    let parent = document.querySelector('.page_hero-talents_items2');
+    if (parent) {
+      let children = parent.children;
+      let changeItem = children[0];
+      parent.removeChild(changeItem);
+      parent.appendChild(changeItem);
+    }
   }, 4000);
 }
 
@@ -307,3 +307,36 @@ var swiper = new Swiper('.swiper-container.two', {
     slideShadows: false,
   }
 });
+
+
+$(document).ready(function () {
+  $('.sub-nav').on('click', function (e) {
+      e.preventDefault();
+
+      var $this = $(this);
+      var target = $this.data('target');
+      var $subContent = $('.sub-content', this);
+      var dtitle = $subContent.data('title');
+      var ddesc = $subContent.data('desc');
+      var dcontent = $subContent.clone();
+
+      $(target + " .offcanvas-title").html(dtitle);
+      $(target + " .intro").html(ddesc);
+      $(target + " .sub-menu-content").html(dcontent);
+
+      var bsOffcanvas = new bootstrap.Offcanvas($(target)[0]);
+      bsOffcanvas.show();
+  });
+
+  $(".btn-close").on('click', function () {
+      var $this = $(this);
+      var subnav = $this.closest('.offcanvas').attr('id');
+      var bsOffcanvas = bootstrap.Offcanvas.getInstance($("#" + subnav)[0]);
+      bsOffcanvas.hide();
+
+      $("#" + subnav + " .offcanvas-title").html('');
+      $("#" + subnav + " .intro").html('');
+      $("#" + subnav + " .sub-menu-content").html('');
+  });
+});
+

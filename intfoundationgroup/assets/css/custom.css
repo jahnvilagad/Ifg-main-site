@@ -2892,6 +2892,10 @@ html {
   margin: 0 auto;
 }
 
+.offcanvas-start .offcanvas-header{ 
+  width: 100%;
+}
+
 
 @media (max-width:1440px) {
   .book-icon::after {
@@ -3264,6 +3268,9 @@ html {
 }
 
 @media (max-width:767px) {
+  .dropdown-item:hover{
+    border-radius: unset;
+  }
   .client-quote {
     margin-left: 1.5rem;
   }
