@@ -2938,6 +2938,7 @@ html {
   .university-partners-click {
     left: -2rem;
   }
+
 }
 
 @media (max-width:1279px) {
@@ -2962,9 +2963,41 @@ html {
     content: unset;
     position: unset;
   }
+
+  .dropdown-menu {
+    position: static;
+  }
+
+  .dropdown-toggle::after {
+    margin-left: .25rem;
+    content: "\F282";
+  }
+
+  .dropdown-item:hover {
+    border-radius: unset;
+  }
+
+  .offcanvas-footer .btn {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .offcanvas-body {
+    padding: 1.25rem 1rem;
+  }
+
+  .offcanvas-footer .navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+
+  }
 }
 
 @media (max-width:1280px) {
+
   .about-img {
     margin-left: 35px;
   }
@@ -3274,8 +3307,9 @@ html {
     margin-bottom: 1rem !important;
   }
 
-  .dropdown-item:hover {
-    border-radius: unset;
+  .ifg-center-bg p {
+    padding: 4px 0px;
+    font-size: 14px;
   }
 
   .client-quote {
@@ -3286,23 +3320,7 @@ html {
     text-align: right;
   }
 
-  .offcanvas-footer .btn {
-    font-size: 1rem;
-  }
 
-  .navbar-nav .nav-item {
-    width: 100%;
-  }
-
-  .offcanvas-body {
-    padding: 1.25rem 1rem;
-  }
-
-  .offcanvas-footer .navbar-nav {
-    width: 100%;
-    justify-content: space-between;
-
-  }
 
   .carousel .carousel-item .text-heading {
     padding: 0 24px;
@@ -3491,8 +3509,14 @@ html {
   }
 
   .social-icon {
-    width: 20%;
+    width: 100%;
     padding: 0;
+    columns: 4;
+    margin-bottom: 0;
+  }
+
+  .social-icon ul li {
+    margin-bottom: 10px;
   }
 
   .contact-border::after {
