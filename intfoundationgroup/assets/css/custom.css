@@ -2892,7 +2892,7 @@ html {
   margin: 0 auto;
 }
 
-.offcanvas-start .offcanvas-header{ 
+.offcanvas-start .offcanvas-header {
   width: 100%;
 }
 
@@ -3268,9 +3268,16 @@ html {
 }
 
 @media (max-width:767px) {
-  .dropdown-item:hover{
+  .dropdown-item {
+    font-size: 14px;
+    padding: .425rem 1rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .dropdown-item:hover {
     border-radius: unset;
   }
+
   .client-quote {
     margin-left: 1.5rem;
   }
