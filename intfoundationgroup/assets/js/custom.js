@@ -292,19 +292,15 @@ if (('.page_hero-talents_items2').length) {
 
 
 var swiper = new Swiper('.swiper-container.two', {
-  pagination: '.swiper-pagination',
-  paginationClickable: true,
-  effect: 'coverflow',
-  loop: true,
-  speed: 2000,
+  spaceBetween: 1,
+  slidesPerView: 3,
   centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflow: {
-    rotate: 0,
-    stretch: 100,
-    depth: 150,
-    modifier: 1.5,
-    slideShadows: false,
+  roundLengths: true,
+  loop: true,
+  loopAdditionalSlides: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 });
 

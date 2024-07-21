@@ -1926,7 +1926,7 @@ ul.navbar-nav li::after,
   z-index: -1;
 }
 
-.bg-team-blue::after {
+/* .bg-team-blue::after {
   background: rgba(0, 112, 242, 1);
   border-radius: 50%;
   width: 278px;
@@ -1937,7 +1937,7 @@ ul.navbar-nav li::after,
   left: 48%;
   transform: translateX(-50%);
   z-index: -1;
-}
+} */
 
 .team-arrow {
   right: 15px;
@@ -3301,6 +3301,24 @@ html {
 }
 
 @media (max-width:767px) {
+  .wave-shape::before {
+    background-size: contain;
+    bottom: -80px;
+    height: 135px;
+    background-repeat: no-repeat;
+  }
+
+  .wave-shape::after {
+    background-size: contain;
+    top: -80px;
+    height: 135px;
+    background-repeat: no-repeat;
+  }
+
+  .guaranteed-progression {
+    font-size: 1.5rem;
+  }
+
   .dropdown-item {
     font-size: 14px;
     padding: .425rem 1rem;
@@ -3513,6 +3531,7 @@ html {
     padding: 0;
     columns: 4;
     margin-bottom: 0;
+    text-align: center;
   }
 
   .social-icon ul li {
