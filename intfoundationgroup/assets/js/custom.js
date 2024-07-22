@@ -296,6 +296,7 @@ var swiper = new Swiper('.swiper-container.two', {
   slidesPerView: 3,
   centeredSlides: true,
   roundLengths: true,
+  arrows: true,
   loop: true,
   loopAdditionalSlides: 30,
   navigation: {
@@ -307,32 +308,32 @@ var swiper = new Swiper('.swiper-container.two', {
 
 $(document).ready(function () {
   $('.sub-nav').on('click', function (e) {
-      e.preventDefault();
+    e.preventDefault();
 
-      var $this = $(this);
-      var target = $this.data('target');
-      var $subContent = $('.sub-content', this);
-      var dtitle = $subContent.data('title');
-      var ddesc = $subContent.data('desc');
-      var dcontent = $subContent.clone();
+    var $this = $(this);
+    var target = $this.data('target');
+    var $subContent = $('.sub-content', this);
+    var dtitle = $subContent.data('title');
+    var ddesc = $subContent.data('desc');
+    var dcontent = $subContent.clone();
 
-      $(target + " .offcanvas-title").html(dtitle);
-      $(target + " .intro").html(ddesc);
-      $(target + " .sub-menu-content").html(dcontent);
+    $(target + " .offcanvas-title").html(dtitle);
+    $(target + " .intro").html(ddesc);
+    $(target + " .sub-menu-content").html(dcontent);
 
-      var bsOffcanvas = new bootstrap.Offcanvas($(target)[0]);
-      bsOffcanvas.show();
+    var bsOffcanvas = new bootstrap.Offcanvas($(target)[0]);
+    bsOffcanvas.show();
   });
 
   $(".btn-close").on('click', function () {
-      var $this = $(this);
-      var subnav = $this.closest('.offcanvas').attr('id');
-      var bsOffcanvas = bootstrap.Offcanvas.getInstance($("#" + subnav)[0]);
-      bsOffcanvas.hide();
+    var $this = $(this);
+    var subnav = $this.closest('.offcanvas').attr('id');
+    var bsOffcanvas = bootstrap.Offcanvas.getInstance($("#" + subnav)[0]);
+    bsOffcanvas.hide();
 
-      $("#" + subnav + " .offcanvas-title").html('');
-      $("#" + subnav + " .intro").html('');
-      $("#" + subnav + " .sub-menu-content").html('');
+    $("#" + subnav + " .offcanvas-title").html('');
+    $("#" + subnav + " .intro").html('');
+    $("#" + subnav + " .sub-menu-content").html('');
   });
 });
 

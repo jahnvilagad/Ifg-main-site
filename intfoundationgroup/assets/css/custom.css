@@ -567,7 +567,7 @@ ul.list-type-none li::after {
 }
 
 .w-36 {
-  width: 34%;
+  width: 33%;
 }
 
 .breadcrumb-img img {
@@ -3298,9 +3298,62 @@ html {
     right: -6rem !important;
     bottom: 0rem !important;
   }
+
+  .breadcrumb-bg h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width:767px) {
+  .btn-scroll-top {
+    bottom: 4rem;
+  }
+
+  .btn-bottom .btn-secondary:hover{
+    background-color: rgba(72, 174, 217, 1);
+    border-color: rgba(72, 174, 217, 1);
+    color: #fff !important;
+  }
+
+  .btn-bottom .btn-primary:hover{
+    background-color:#174780;
+    border-color:#174780;
+    color: #fff !important;
+  }
+  .contact-border-sm {
+    border: 2px solid rgba(211, 226, 243, 1);
+    border-radius: 6px;
+    text-align: center;
+    padding: 12px 7px;
+  }
+
+  .london-teaching-centre-bg::after {
+    right: -11px;
+    width: 330px;
+    height: 382px;
+  }
+
+  .contact-border-sm p {
+    font-size: 13px;
+  }
+
+  .btn-width .btn {
+    width: 100%;
+  }
+
+  .newsletter .btn {
+    width: auto !important;
+  }
+
+  .back-page-arrow {
+    position: absolute;
+    top: 1rem;
+  }
+
+  .search-course-mr {
+    margin-top: 20px;
+  }
+
   .wave-shape::before {
     background-size: contain;
     bottom: -80px;
@@ -3408,14 +3461,14 @@ html {
   }
 
   .ifg-bg-gradient {
-    min-height: 155px;
+    min-height: 203px;
   }
 
   .breadcrumb-bg .position-absolute {
     text-align: center;
-    position: unset !important;
-    width: auto;
-    transform: unset !important;
+    width: 100%;
+    transform: translate(-50%, -50%) !important;
+    left: 50%;
   }
 
   .breadcrumb {
@@ -3429,8 +3482,10 @@ html {
   }
 
   .why-choose-teaching {
-    right: 3rem;
-    top: 9rem;
+    right: auto;
+    top: 61%;
+    transform: translate(-50%, -50%);
+    left: 53%;
   }
 
   .testimonial-content-scroll {
@@ -3604,12 +3659,24 @@ html {
     font-size: 2rem;
   }
 
-  .triangle-shape::after {
+  /* .triangle-shape::after {
     content: unset;
     position: unset;
-  }
+  } */
 
   .column-4 ul {
     columns: 2;
+  }
+
+  .swiper-wrapper .media-body {
+    margin-top: 1rem;
+  }
+
+  .input-group-lg {
+    width: 100% !important;
+  }
+
+  .breadcrumb-bg {
+    width: 100%;
   }
 }

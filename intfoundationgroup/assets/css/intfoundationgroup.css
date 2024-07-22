@@ -12006,8 +12006,8 @@ fieldset:disabled .btn {
 .btn-outline-primary.active,
 .btn-outline-primary.dropdown-toggle.show {
 	color: #000;
-	background-color: #766df4;
-	border-color: #766df4
+	background-color: rgba(23, 71, 128, 1);
+	border-color: rgba(23, 71, 128, 1)
 }
 
 .btn-check:checked+.btn-outline-primary:focus,
