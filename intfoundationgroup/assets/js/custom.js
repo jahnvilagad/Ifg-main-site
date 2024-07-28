@@ -9,35 +9,6 @@
 })();
 
 
-
-// $(document).ready(function () {
-// const slider = new Swiper('.swiper-testimonial', {
-//   slidesPerView: 2,
-//   spaceBetween: 30,
-//   loop: true,
-//   autoplay: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next-test',
-//     prevEl: '.swiper-button-prev-test',
-//   },
-//   breakpoints: {
-//     991: {
-//       slidesPerView: 1,
-//     },
-//     640: {
-//       slidesPerView: 1,
-//       spaceBetween: 50,
-//     }
-//   },
-// });
-// });
-
-
-
 /*partners js*/
 $(document).ready(function () {
   $(".SlickCarousel").slick({
@@ -70,7 +41,7 @@ $(document).ready(function () {
       },
     ],
   })
-})
+});
 
 $(document).ready(function () {
   $('.center').slick({
@@ -86,7 +57,7 @@ $(document).ready(function () {
   $('.center').on('afterChange', function (event, slick, currentSlide) {
     console.log('afterChange', currentSlide);
   });
-})
+});
 
 
 /*partners say about us */
@@ -155,43 +126,67 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function () {
-  $('.slider-accreditations').slick({
-    dots: false,
-    prevArrow: $('.prev4'),
-    nextArrow: $('.next4'),
-    infinite: true,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
+// $(document).ready(function () {
+//   $('.slider-accreditations').slick({
+//     centerMode: true,
+//     slidesToShow: 3,
+//     dots: false,
+//     prevArrow: $('.prev4'),
+//     nextArrow: $('.next4'),
+//     infinite: true,
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     slidesToScroll: 1,
+//   });
+// });
 
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      }]
+
+$(document).ready(function(){
+  $('.university').slick({
+    variableWidth: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    centerPadding: '10px',
+    infinite: true,
+    autoplaySpeed: 5000,
+    autoplay: true,
   });
 });
+
+$(document).ready(function(){
+  $('.slider-accreditations').slick({
+    variableWidth: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    centerPadding: '10px',
+    infinite: true,
+    autoplaySpeed: 5000,
+    autoplay: true,
+  });
+});
+// });
+// $(document).ready(function () {
+//   $('.university').slick({
+//     centerMode: true,
+//     slidesToShow: 3,
+//     dots: false,
+//     prevArrow: $('.prev4'),
+//     nextArrow: $('.next4'),
+//     infinite: true,
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     slidesToScroll: 1,
+//     arrows:true,
+//   });
+// });
 
 $(document).ready(function () {
 
@@ -290,21 +285,24 @@ if (('.page_hero-talents_items2').length) {
   }, 4000);
 }
 
-
-var swiper = new Swiper('.swiper-container.two', {
-  spaceBetween: 1,
-  slidesPerView: 3,
-  centeredSlides: true,
-  roundLengths: true,
-  arrows: true,
-  loop: true,
-  loopAdditionalSlides: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
+$(document).ready(function () {
+  const swiper = new Swiper('.swiper-container.two', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    effect: 'coverflow',
+    loop: true,
+    speed: 5000,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflow: {
+      rotate: 0,
+      stretch: 100,
+      depth: 150,
+      modifier: 1.5,
+      slideShadows: false,
+    }
+  });
 });
-
 
 $(document).ready(function () {
   $('.sub-nav').on('click', function (e) {

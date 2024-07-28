@@ -379,93 +379,53 @@ ul.list-type-none li::after {
   z-index: -1;
 }
 
-/*partners css start*/
-/* Slick Slider Css Ruls */
-
-.slick-slider {
-  position: relative;
-  display: block;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent
+/*Our University Partners css start*/
+.university .slick-slide,.slider-accreditations .slick-slide{
+  color: #FFF;
+  margin: 0 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
+  transition: all 0.4s ease-in-out;
+}
+.university .slick-slide,
+.university .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"],
+.slider-accreditations .slick-slide,
+.slider-accreditations .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"]
+ {
+  transform: scale(0.8, 0.8);
+  transition: all 0.4s ease-in-out;
 }
 
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0
+/* Active center slide (You can change anything here for cenetr slide)*/
+.university .slick-center,
+.university .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"],
+.slider-accreditations .slick-center,
+.slider-accreditations .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1.1);
+}
+.university .slick-current.slick-active,.slider-accreditations .slick-current.slick-active{
+  transform: scale(1.1);
 }
 
-.slick-list:focus {
-  outline: none
+.university .slick-next,.university .slick-prev,.slider-accreditations .slick-next,.slider-accreditations .slick-prev{
+  z-index: 5;
+}
+.university .slick-next,.slider-accreditations .slick-next{
+  right: 40%;
+}
+.university .slick-prev,.slider-accreditations .slick-prev{
+  left: 40%;
+}
+.university .slick-next:before,.university .slick-prev:before,
+.slider-accreditations .slick-next:before,.slider-accreditations .slick-prev:before {
+  color: #000;
+  font-size: 26px;
 }
 
-.slick-list.dragging {
-  cursor: hand
-}
+/*Our University Partners css end*/
 
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0)
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: ''
-}
-
-.slick-track:after {
-  clear: both
-}
-
-.slick-loading .slick-track {
-  visibility: hidden
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px
-}
-
-.slick-slide.dragging img {
-  pointer-events: none
-}
-
-.slick-initialized .slick-slide {
-  display: block
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent
-}
-
-/* Slider Theme Style */
 
 .partners-slider {
   padding: 0 15px;
@@ -567,7 +527,7 @@ ul.list-type-none li::after {
 }
 
 .w-36 {
-  width: 33%;
+  width: 32%;
 }
 
 .breadcrumb-img img {
@@ -1849,6 +1809,16 @@ ul.navbar-nav li::after,
   background: rgba(176, 176, 176, 1);
 }
 
+.team-content-scroll::-webkit-scrollbar {
+  width: 3px;
+  transition: .3s background;
+  background: rgba(228, 228, 228, 1);
+}
+
+.team-content-scroll::-webkit-scrollbar-thumb {
+  background: rgba(176, 176, 176, 1);
+}
+
 .faq-breadcrumb .breadcrumb-bg::before {
   background-color: unset;
   position: unset;
@@ -1887,7 +1857,7 @@ ul.navbar-nav li::after,
   background-color: rgba(23, 71, 128, 1);
 }
 
-.bg-team-yellow::after {
+/* .bg-team-yellow::after {
   background: rgba(255, 186, 0, 1);
   border-radius: 50%;
   width: 278px;
@@ -1924,7 +1894,7 @@ ul.navbar-nav li::after,
   left: 48%;
   transform: translateX(-50%);
   z-index: -1;
-}
+} */
 
 /* .bg-team-blue::after {
   background: rgba(0, 112, 242, 1);
@@ -1940,7 +1910,7 @@ ul.navbar-nav li::after,
 } */
 
 .team-arrow {
-  right: 15px;
+  right: 3px;
   left: auto;
   bottom: 3rem;
 }
@@ -2526,6 +2496,10 @@ div.owl-carousel .owl-nav .owl-next {
   height: 95px;
 }
 
+.ifg-scholarship::after {
+  left: -2rem;
+}
+
 .quote-img::before {
   content: '';
   background-image: url(../img/feature/quote-right.png);
@@ -2582,6 +2556,13 @@ header .navbar .offcanvas-header .btn-close {
 
 .testimonial-content-scroll {
   height: 120px;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+
+.team-content-scroll {
+  height: 226px;
   overflow: auto;
   padding-right: 8px;
 }
@@ -2728,7 +2709,7 @@ html {
   -webkit-transform-origin: right;
   transform-origin: right;
   width: 220px !important;
-  margin: 0px 0px 0px auto;
+  margin: 0px 0px -14px auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -2897,6 +2878,38 @@ html {
 }
 
 
+/*Our University Partners mobile view slider css start*/
+.swiper-container.two {
+  width: 100%;
+  margin: 40px 0;
+  padding: 45px 0;
+}
+
+.swiper-container.two .swiper-slide {
+  opacity: 0.4;
+  overflow: hidden;
+  transition: .7s;
+}
+
+/* .swiper-container.two .swiper-slide img {
+  width: 100%;
+} */
+
+.swiper-container.two .swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.5);
+}
+
+/*Our University Partners mobile view slider css end*/
+
+.breadcrumb-bg h1 {
+  font-size: 2rem;
+}
+
+
+
+
 @media (max-width:1440px) {
   .book-icon::after {
     right: 0rem;
@@ -2919,7 +2932,7 @@ html {
   }
 
   .bg-blue-shape::after {
-    border-right: 70rem solid transparent;
+    border-right: 69rem solid transparent;
   }
 }
 
@@ -3032,6 +3045,18 @@ html {
 }
 
 @media (max-width:1024px) {
+  .london-teaching-centre-bg::after {
+    width: 307px;
+    height: 356px;
+  }
+
+  .offcanvas-bottom {
+    height: 100% !important;
+  }
+
+  .carousel .carousel-item .text-heading {
+    font-size: 2.5rem;
+  }
 
   .ifg-partner-teaching-center .carousel-caption h2 {
     font-size: 38px;
@@ -3060,7 +3085,8 @@ html {
   }
 
   .arrow-vector {
-    bottom: -3rem;
+    bottom: -4rem;
+    right: 3rem;
   }
 
   .swiper-container-1 .ifg-play-button {
@@ -3142,6 +3168,11 @@ html {
 }
 
 @media (max-width:991px) {
+  .london-teaching-centre-bg::after {
+    width: 226px;
+    height: 258px;
+  }
+
   .ifg-partner-teaching-center .carousel-caption h2 {
     font-size: 26px;
   }
@@ -3305,21 +3336,59 @@ html {
 }
 
 @media (max-width:767px) {
-  .btn-scroll-top {
-    bottom: 4rem;
+  .team-modal-img img {
+    width: 50%;
   }
 
-  .btn-bottom .btn-secondary:hover{
+  .ifg-bg-gradient h1 {
+    font-size: 1.5rem;
+  }
+
+  .ifg-btn .btn {
+    width: 100%;
+  }
+
+  .about-us {
+    left: auto;
+    right: -9px;
+    top: 5rem;
+  }
+
+  .about-us p {
+    font-size: 38px;
+    line-height: 37px;
+    margin: 0;
+  }
+
+  .about-us span {
+    color: unset;
+  }
+
+  .btn-scroll-top {
+    bottom: 9rem;
+  }
+
+  .search-course .btn {
+    width: 100% !important;
+  }
+
+  .ifg-center {
+    bottom: -4rem;
+    display: flex;
+  }
+
+  .btn-bottom .btn-secondary:hover {
     background-color: rgba(72, 174, 217, 1);
     border-color: rgba(72, 174, 217, 1);
     color: #fff !important;
   }
 
-  .btn-bottom .btn-primary:hover{
-    background-color:#174780;
-    border-color:#174780;
+  .btn-bottom .btn-primary:hover {
+    background-color: #174780;
+    border-color: #174780;
     color: #fff !important;
   }
+
   .contact-border-sm {
     border: 2px solid rgba(211, 226, 243, 1);
     border-radius: 6px;
@@ -3421,7 +3490,8 @@ html {
   }
 
   .ifg-partner-teaching-center .carousel-caption {
-    top: -69%;
+    top: -50%;
+    transform: translate(-50%, -50%);
   }
 
   .how-to-apply::after,
