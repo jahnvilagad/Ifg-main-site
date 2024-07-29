@@ -380,7 +380,8 @@ ul.list-type-none li::after {
 }
 
 /*Our University Partners css start*/
-.university .slick-slide,.slider-accreditations .slick-slide{
+.university .slick-slide,
+.slider-accreditations .slick-slide {
   color: #FFF;
   margin: 0 16px 0 0;
   display: flex;
@@ -389,37 +390,49 @@ ul.list-type-none li::after {
   transform: scale(0.8);
   transition: all 0.4s ease-in-out;
 }
+
 .university .slick-slide,
-.university .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"],
+.university .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"],
 .slider-accreditations .slick-slide,
-.slider-accreditations .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"]
- {
+.slider-accreditations .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
   transform: scale(0.8, 0.8);
   transition: all 0.4s ease-in-out;
 }
 
 /* Active center slide (You can change anything here for cenetr slide)*/
 .university .slick-center,
-.university .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"],
+.university .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"],
 .slider-accreditations .slick-center,
-.slider-accreditations .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
-  transform: scale(1.1);
-}
-.university .slick-current.slick-active,.slider-accreditations .slick-current.slick-active{
+.slider-accreditations .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
   transform: scale(1.1);
 }
 
-.university .slick-next,.university .slick-prev,.slider-accreditations .slick-next,.slider-accreditations .slick-prev{
+.university .slick-current.slick-active,
+.slider-accreditations .slick-current.slick-active {
+  transform: scale(1.1);
+}
+
+.university .slick-next,
+.university .slick-prev,
+.slider-accreditations .slick-next,
+.slider-accreditations .slick-prev {
   z-index: 5;
 }
-.university .slick-next,.slider-accreditations .slick-next{
+
+.university .slick-next,
+.slider-accreditations .slick-next {
   right: 40%;
 }
-.university .slick-prev,.slider-accreditations .slick-prev{
+
+.university .slick-prev,
+.slider-accreditations .slick-prev {
   left: 40%;
 }
-.university .slick-next:before,.university .slick-prev:before,
-.slider-accreditations .slick-next:before,.slider-accreditations .slick-prev:before {
+
+.university .slick-next:before,
+.university .slick-prev:before,
+.slider-accreditations .slick-next:before,
+.slider-accreditations .slick-prev:before {
   color: #000;
   font-size: 26px;
 }
@@ -2595,9 +2608,9 @@ header .navbar .offcanvas-header .btn-close {
   font-size: 50px;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 .togetherall-text .breadcrumb-img img,
 .university-of-birmingham .breadcrumb-img img,
@@ -2616,7 +2629,7 @@ html {
 .slider-hero {
   position: fixed;
   right: 0;
-  bottom: 1rem;
+  bottom: 4rem;
   z-index: 1;
 }
 
@@ -3336,6 +3349,38 @@ html {
 }
 
 @media (max-width:767px) {
+  .team-arrow {
+    right: 1rem;
+  }
+
+  .slick-slider .slick-prev,
+  .slick-slider .slick-next {
+    bottom: -22px;
+  }
+
+  .slider-accreditations .slick-prev,
+  .slider-accreditations .slick-next,
+  .university .slick-prev,
+  .university .slick-next {
+    bottom: -38px;
+  }
+
+  .student-name::after {
+    left: 9rem;
+  }
+
+  .footer .accordion-item {
+    border: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .footer .accordion-button {
+    background-color: unset !important;
+    box-shadow: none !important;
+    padding: 1rem 0px !important;
+  }
+
+
   .team-modal-img img {
     width: 50%;
   }
@@ -3365,7 +3410,7 @@ html {
   }
 
   .btn-scroll-top {
-    bottom: 9rem;
+    bottom: 12rem;
   }
 
   .search-course .btn {
@@ -3381,6 +3426,10 @@ html {
     background-color: rgba(72, 174, 217, 1);
     border-color: rgba(72, 174, 217, 1);
     color: #fff !important;
+  }
+
+  .btn-bottom {
+    z-index: 9999 !important;
   }
 
   .btn-bottom .btn-primary:hover {
