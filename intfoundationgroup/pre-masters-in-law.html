@@ -66,7 +66,7 @@
                 </div>
                 <div class="d-flex text-md-end ms-auto">
                     <a class="topbar-link px-2 py-2 bg-secondary" href="courses-filters.html"><i
-                            class="bi bi-search fs-base opacity-60 me-1 align-middle"></i>Course Finder</a>
+                            class="bi bi-search fs-base me-1 align-middle"></i>Course Finder</a>
                     <a class="topbar-link px-2 py-2 bg-primary d-none d-lg-block"
                         href="accommodation.html">Accommodation</a>
                     <a class="topbar-link px-2 py-2 bg-success" href="application-form.html">Apply Now</a>
@@ -355,12 +355,9 @@
                     </div>
                 </div>
                 <div class="d-flex text-md-end ms-auto">
-                    <a class="topbar-link px-2 py-2 bg-secondary" href="courses-filters.html"><i
-                            class="bi bi-search fs-base opacity-60 me-1 align-middle"></i>Course Finder</a>
-                    <a class="topbar-link px-2 py-2 bg-primary d-none d-lg-block"
-                        href="accommodation.html">Accommodation</a>
-                    <a class="topbar-link px-2 py-2 bg-success" href="application-form.html">Apply Now</a>
-                    <a class="topbar-link px-2 py-2 bg-info d-none d-lg-block" href="contact-us.html">Contact</a>
+                    <a class="topbar-link px-3 py-2 bg-success" href="application-form.html">Apply Now</a>
+                    <a class="topbar-link px-3 py-2 bg-secondary" href="courses-filters.html"><i
+                            class="bi bi-search fs-base me-1 align-middle"></i>Course</a>
                 </div>
             </div>
         </div>
@@ -399,6 +396,8 @@
                             <li class="nav-item sub-nav" data-target="#nav_sub3">
                                 <a class="nav-link" href="#">Student Support</a>
                             </li>
+                            <li class="nav-item"><a class="nav-link ps-xl-0" href="accommodation.html">Accommodation</a>
+                            </li>
                             <li class="nav-item sub-nav" data-target="#nav_sub4">
                                 <a class="nav-link" href="#">About</a>
                                 <div class="dropdown-menu py-4 dropdown-logo-icon">
@@ -422,8 +421,8 @@
                         </ul>
                     </div>
                     <div class="offcanvas-footer d-flex d-xl-none px-0 pb-0">
-                        <a class="btn btn-success rounded-0 w-50" href="accommodation.html"><i
-                                class="bi bi-house-door-fill me-2"></i>Accommodation</a>
+                        <a class="btn bg-primary text-white rounded-0 w-50" href="application-form.html"><i
+                                class="bi bi-send-fill me-2"></i>Apply Now</a>
                         <a class="btn btn-primary rounded-0 w-50" href="contact-us.html"><i
                                 class="bi bi-telephone-fill me-2"></i>Contact</a>
                     </div>
@@ -431,14 +430,15 @@
 
                 <div class="offcanvas offcanvas-start align-items-center dropdown-logo-icon" id="nav_sub" tabindex="-1"
                     aria-labelledby="nav_subLabel">
-                    <div class="offcanvas-header navbar-shadow">
+                    <div class="offcanvas-header navbar-shadow py-2">
+                        <i class="bi bi-arrow-left fs-1" data-bs-dismiss="offcanvas"></i>
                         <h5 class="mt-1 mb-0">Menu</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <div class="col-md-3 mb-2 mb-lg-0 position-relative menu-border">
-                            <a class="dropdown-item mb-4 text-secondary fw-bold" href="teaching-centre.html">IFG
+                            <a class="dropdown-item mb-4 text-secondary fw-bold fs-4" href="teaching-centre.html">IFG
                                 Teaching
                                 Centres <i class="bi bi-arrow-right"></i></a>
                             <div class="row">
@@ -462,7 +462,7 @@
 
                         </div>
                         <div class="col-md-7 mb-2 mb-lg-0">
-                            <a class="dropdown-item mb-4 text-secondary fw-bold" href="#">IFG Partner
+                            <a class="dropdown-item mb-4 text-secondary fw-bold fs-4" href="#">IFG Partner
                                 Teaching Centres <i class="bi bi-arrow-right"></i></a>
                             <div class="row">
                                 <div class="col-6">
@@ -524,8 +524,8 @@
                         </div>
                     </div>
                     <div class="offcanvas-footer d-flex d-xl-none px-0 pb-0 w-100">
-                        <a class="btn btn-success rounded-0 w-50" href="accommodation.html"><i
-                                class="bi bi-house-door-fill me-2"></i>Accommodation</a>
+                        <a class="btn bg-primary text-white rounded-0 w-50" href="application-form.html"><i
+                                class="bi bi-send-fill me-2"></i>Apply Now</a>
                         <a class="btn btn-primary rounded-0 w-50" href="contact-us.html"><i
                                 class="bi bi-telephone-fill me-2"></i>Contact</a>
                     </div>
@@ -533,7 +533,8 @@
 
                 <div class="offcanvas offcanvas-start align-items-center dropdown-logo-icon" id="nav_sub2" tabindex="-1"
                     aria-labelledby="nav_subLabel">
-                    <div class="offcanvas-header navbar-shadow">
+                    <div class="offcanvas-header navbar-shadow py-2">
+                        <i class="bi bi-arrow-left fs-1" data-bs-dismiss="offcanvas"></i>
                         <h5 class="mt-1 mb-0">Menu</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
@@ -545,9 +546,11 @@
                                 class="bi bi-currency-dollar fs-3 text-primary me-2"></i>Fees</a>
                         <a class="dropdown-item py-3 border-bottom w-100" href="scholarships.html"><i
                                 class="bi bi-mortarboard fs-3 text-primary me-2"></i> Ifg Scholorships</a>
-                        <a class="dropdown-item py-3 border-bottom w-100" href="entry-requirements.html"> <i class="bi bi-card-checklist fs-3 text-primary me-2"></i>Entry
+                        <a class="dropdown-item py-3 border-bottom w-100" href="entry-requirements.html"> <i
+                                class="bi bi-card-checklist fs-3 text-primary me-2"></i>Entry
                             Requirements</a>
-                        <a class="dropdown-item py-3 border-bottom w-100" href="english-placement-test.html">Placement
+                        <a class="dropdown-item py-3 border-bottom w-100" href="english-placement-test.html"><i
+                                class="bi bi-pencil-square fs-3 text-primary me-2"></i> Placement
                             Test</a>
                         <div class="col-md-4 mb-2 mb-lg-0 position-relative menu-border">
                             <p class="dropdown-item mb-4 text-secondary fw-bold">Where do you want
@@ -580,15 +583,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ms-3">
+                        <div class="ms-3 text-center">
                             <a class="btn btn-outline-info mb-3 m-auto text-wrap"
                                 href="application-process.html">Application Proccess <i
                                     class="bi bi-arrow-up-right-circle ms-2"></i></a>
                         </div>
                     </div>
                     <div class="offcanvas-footer d-flex d-xl-none px-0 pb-0 w-100">
-                        <a class="btn btn-success rounded-0 w-50" href="accommodation.html"><i
-                                class="bi bi-house-door-fill me-2"></i>Accommodation</a>
+                        <a class="btn bg-primary text-white rounded-0 w-50" href="application-form.html"><i
+                                class="bi bi-send-fill me-2"></i>Apply Now</a>
                         <a class="btn btn-primary rounded-0 w-50" href="contact-us.html"><i
                                 class="bi bi-telephone-fill me-2"></i>Contact</a>
                     </div>
@@ -596,7 +599,8 @@
 
                 <div class="offcanvas offcanvas-start align-items-center dropdown-logo-icon" id="nav_sub3" tabindex="-1"
                     aria-labelledby="nav_subLabel">
-                    <div class="offcanvas-header navbar-shadow">
+                    <div class="offcanvas-header navbar-shadow py-2">
+                        <i class="bi bi-arrow-left fs-1" data-bs-dismiss="offcanvas"></i>
                         <h5 class="mt-1 mb-0">Menu</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
@@ -615,19 +619,18 @@
                         <a class="dropdown-item py-3 border-bottom w-100" href="#">Pharos </a>
                         <a class="dropdown-item py-3 border-bottom w-100" href="faqs.html">FAQs</a>
 
-                        <div class="ms-3 mt-3">
-                            <a class="btn btn-outline-info m-auto text-wrap"
-                                href="student-handbook.html">Student
+                        <div class="ms-3 mt-3 text-center">
+                            <a class="btn btn-outline-info m-auto text-wrap w-75" href="student-handbook.html">Student
                                 Handbook <i class="bi bi-arrow-up-right-circle ms-2"></i></a>
                         </div>
-                        <div class="ms-3 mt-3">
-                            <a class="btn btn-outline-info m-auto text-wrap"
-                                href="togetherall.html">Togetherall <i class="bi bi-arrow-up-right-circle ms-2"></i></a>
+                        <div class="ms-3 mt-3 text-center">
+                            <a class="btn btn-outline-info m-auto text-wrap w-75" href="togetherall.html">Togetherall <i
+                                    class="bi bi-arrow-up-right-circle ms-2"></i></a>
                         </div>
                     </div>
                     <div class="offcanvas-footer d-flex d-xl-none px-0 pb-0 w-100">
-                        <a class="btn btn-success rounded-0 w-50" href="accommodation.html"><i
-                                class="bi bi-house-door-fill me-2"></i>Accommodation</a>
+                        <a class="btn bg-primary text-white rounded-0 w-50" href="application-form.html"><i
+                                class="bi bi-send-fill me-2"></i>Apply Now</a>
                         <a class="btn btn-primary rounded-0 w-50" href="contact-us.html"><i
                                 class="bi bi-telephone-fill me-2"></i>Contact</a>
                     </div>
@@ -635,7 +638,8 @@
 
                 <div class="offcanvas offcanvas-start align-items-center dropdown-logo-icon" id="nav_sub4" tabindex="-1"
                     aria-labelledby="nav_subLabel">
-                    <div class="offcanvas-header navbar-shadow">
+                    <div class="offcanvas-header navbar-shadow py-2">
+                        <i class="bi bi-arrow-left fs-1" data-bs-dismiss="offcanvas"></i>
                         <h5 class="mt-1 mb-0">Menu</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
@@ -651,8 +655,8 @@
                             Opportunities</a>
                     </div>
                     <div class="offcanvas-footer d-flex d-xl-none px-0 pb-0 w-100">
-                        <a class="btn btn-success rounded-0 w-50" href="accommodation.html"><i
-                                class="bi bi-house-door-fill me-2"></i>Accommodation</a>
+                        <a class="btn bg-primary text-white rounded-0 w-50" href="application-form.html"><i
+                                class="bi bi-send-fill me-2"></i>Apply Now</a>
                         <a class="btn btn-primary rounded-0 w-50" href="contact-us.html"><i
                                 class="bi bi-telephone-fill me-2"></i>Contact</a>
                     </div>
@@ -916,7 +920,7 @@
     </section>
 
 
-    <section class="newsletter py-4 py-md-6 position-relative my-5">
+    <section class="newsletter py-4 py-md-6 position-relative mt-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3 text-center text-md-start">
@@ -1137,7 +1141,7 @@
                     <li><a href="agent-resources.html" class="text-decoration-none">Agent Resources</a></li>
                     <li><a href="#" class="text-decoration-none">Apply to be a partner teaching centre</a></li>
                     <li><a href="#" class="text-decoration-none">IFG Professional</a></li>
-                    <li><a href="#" class="text-decoration-none">IFG Alumni</a></li>
+                    <li><a href="#" class="text-decoration-none">IFG Ambassadors</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-2">
@@ -1350,7 +1354,7 @@
                                 <a href="#" class="text-decoration-none">IFG Professional</a>
                             </li>
                             <li>
-                                <a href="#" class="text-decoration-none">IFG Alumni</a>
+                                <a href="#" class="text-decoration-none">IFG Ambassadors</a>
                             </li>
                         </ul>
                     </div>
@@ -1515,10 +1519,7 @@
         </div>
     </div>
 
-    <!-- Back to top button-->
-    <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>
-        <i class="btn-scroll-top-icon bi-arrow-up"></i>
-    </a>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/smooth-scroll.polyfills.min.js"></script>

@@ -8358,7 +8358,7 @@ h2,
 
 	h2,
 	.h2 {
-		font-size: 2rem
+		font-size: 3.5rem
 	}
 }
 
@@ -15391,7 +15391,7 @@ fieldset:disabled .btn {
 .carousel-fade .active.carousel-item-end {
 	z-index: 0;
 	opacity: 0;
-	transition: opacity 0s .6s
+	transition: opacity 0s .0s
 }
 
 @media(prefers-reduced-motion: reduce) {
