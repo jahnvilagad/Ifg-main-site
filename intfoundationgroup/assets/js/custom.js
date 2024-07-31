@@ -348,3 +348,24 @@ $('.courses-scroll a[href*="#"]').on('click', function (e) {
     'linear'
   )
 })
+
+
+
+jQuery(function($) {
+  var show_char = 280;
+  var ellipses = "... ";
+  var content = $(".text-block").text(); //change here ..
+
+  if (content.length > show_char) {
+    var a = content.substr(0, show_char);
+    var b = content.substr(show_char - content.length);
+    var html = a + "<span class='truncated'>" + ellipses + "</span><span class='truncated' style='display:none'>" + b + "</span><a class='read-more text-primary' href='#'>Read more</a>"; //move read more outside
+    $(".text-block").html("<p>" + html + "</p>");
+  }
+
+  $(".read-more").click(function(e) {
+    e.preventDefault();
+    $(".read-more").text() == "Read more" ? $(".read-more").text("Read less") : $(".read-more").text("Read more") //change here..
+    $(".text-block .truncated ").toggle();
+  });
+});
