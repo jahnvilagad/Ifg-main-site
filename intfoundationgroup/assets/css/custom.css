@@ -125,16 +125,19 @@
 ::-moz-selection {
   background: #174780;
   color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 
 ::selection {
   background: #174780;
   color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 
 ::-moz-selection {
   background: #174780;
   color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 
 body::-webkit-scrollbar {
