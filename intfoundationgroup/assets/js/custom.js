@@ -349,6 +349,18 @@ $('.courses-scroll a[href*="#"]').on('click', function (e) {
   )
 })
 
+$('a[href*="#become-a-partner-center"]').on('click', function (e) {
+  e.preventDefault()
+
+  $('html, body').animate(
+    {
+      scrollTop: ($($(this).attr('href')).offset().top) - 100,
+    },
+    500,
+    'linear'
+  )
+})
+
 
 
 jQuery(function($) {
