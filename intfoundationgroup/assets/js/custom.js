@@ -216,7 +216,7 @@ $(document).ready(function () {
     speed: 1000,
     vertical: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     rows: 1,
     responsive: [
       {
