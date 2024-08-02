@@ -25318,6 +25318,7 @@ input[type=search]::-webkit-search-results-decoration {
     font-weight: 500;
     white-space: nowrap;
     display:table;
+	margin-left: 9px;
 }
 
 .student-support-border .dropdown-item {
@@ -29244,7 +29245,7 @@ _:-ms-lang(x),
 }
 
 .offcanvas:not(.offcanvas-end):not(.offcanvas-bottom) {
-	top: 0;
+	top: -39px;
 	left: 0;
 	width: 22rem;
 	border-right: 0 solid transparent;
