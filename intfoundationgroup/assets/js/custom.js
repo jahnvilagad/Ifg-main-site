@@ -141,7 +141,7 @@ $(document).ready(function () {
 // });
 
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.university').slick({
     variableWidth: true,
     slidesToShow: 3,
@@ -157,7 +157,7 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.slider-accreditations').slick({
     variableWidth: true,
     slidesToShow: 3,
@@ -363,7 +363,7 @@ $('a[href*="#become-a-partner-center"]').on('click', function (e) {
 
 
 
-jQuery(function($) {
+jQuery(function ($) {
   var show_char = 280;
   var ellipses = "... ";
   var content = $(".text-block").text(); //change here ..
@@ -375,9 +375,22 @@ jQuery(function($) {
     $(".text-block").html("<p>" + html + "</p>");
   }
 
-  $(".read-more").click(function(e) {
+  $(".read-more").click(function (e) {
     e.preventDefault();
     $(".read-more").text() == "Read more" ? $(".read-more").text("Read less") : $(".read-more").text("Read more") //change here..
     $(".text-block .truncated ").toggle();
   });
 });
+
+
+
+if (typeof myFunction === 'undefined') {
+  function myFunction() {
+      console.log("myFunction is now defined!");
+  }
+}
+
+// Now you can safely call myFunction
+myFunction();
+
+
